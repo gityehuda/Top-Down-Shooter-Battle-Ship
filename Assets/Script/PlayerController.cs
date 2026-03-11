@@ -28,17 +28,24 @@ public class PlayerController : MonoBehaviour
             weapon.Fire();
         }
 
-        moveDirection = new Vector2(moveX, moveY).normalized;
+        if(Input.GetKey(KeyCode.A))
+        {
+            transform.Rotate(0, 0, 0.01f);
+        }
+        else if(Input.GetKey(KeyCode.D))
+        {
+            transform.Rotate(0, 0, -0.01f);
+        }    
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);    
 
     }
 
     private void FixedUpdate()
     {
-        rb2d.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
-        Vector2 aimDirection = mousePosition - rb2d.position;   
+      /*  rb2d.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+        Vector2 aimDirection = mousePosition - rb2d.position;
         float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg - 90f;
-        rb2d.rotation = aimAngle;
+        rb2d.rotation = aimAngle;*/
 
 
     }
