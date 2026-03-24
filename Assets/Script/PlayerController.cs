@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 5f;
     public Rigidbody2D rb2d;
     public Weapon weapon;
+    public Weapon weapon2;
+    private int health = 10;
 
     Vector2 moveDirection;
     Vector2 mousePosition;
@@ -23,27 +25,62 @@ public class PlayerController : MonoBehaviour
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
 
-        if(Input.GetMouseButtonDown(0))
+        mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //  moveDirection = new Vector2(moveX, moveY).normalized;
+        //moveDirection.y += Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
+        //transform.position = moveDirection;  
+        MoveandRotate();
+        Attack();                       
+
+        if(health < 0)
         {
-            weapon.Fire();
+            Destroy(gameObject);
         }
 
+    }
+
+    private void MoveandRotate()
+    {
         if(Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(0, 0, 0.01f);
+            transform.Rotate(0, 0, 0.1f);
         }
         else if(Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(0, 0, -0.01f);
+            transform.Rotate(0, 0, -0.1f);
         }    
-        mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);    
 
+        if(Input.GetKey(KeyCode.W))
+        {
+            transform.position += transform.right * moveSpeed * Time.deltaTime;
+        }
+
+    }
+
+    private void Attack()
+    {
+        if(Input.GetMouseButtonDown(0))
+        {
+           
+              weapon.Fire();
+            weapon2.Fire();
+          
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "EnemyBullet")
+        {
+            health--;
+        }
     }
 
     private void FixedUpdate()
     {
-      /*  rb2d.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
-        Vector2 aimDirection = mousePosition - rb2d.position;
+       
+            
+      /*  Vector2 aimDirection = mousePosition - rb2d.position;
         float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg - 90f;
         rb2d.rotation = aimAngle;*/
 

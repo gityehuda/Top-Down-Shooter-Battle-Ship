@@ -4,10 +4,22 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float lifeSpan = 1f;
+    public float lifeSpan = 4f;
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(gameObject);                                            
+        if(gameObject.tag == "Bullet" && collision.gameObject.tag == "Enemy")
+        {
+            Destroy(gameObject);
+        }
+      
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(gameObject.tag == "EnemyBullet" && collision.gameObject.tag == "Player")
+        {
+            Destroy(gameObject);
+        }
     }
 
     // Start is called before the first frame update
