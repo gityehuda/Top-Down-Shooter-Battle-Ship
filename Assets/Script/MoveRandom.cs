@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
+
 
 [RequireComponent(typeof(MyMoveable))]
-public class MoveForward : MonoBehaviour
+public class MoveRandom : MonoBehaviour
 {
     private MyMoveable moveable;
 
@@ -14,8 +16,13 @@ public class MoveForward : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Start()
     {
-        moveable.setDirection(transform.right);
+        moveable.setDirection(randomDirection(), randomDirection());
+    }
+
+    private float randomDirection()
+    {
+        return Random.Range(-1f, 1f);
     }
 }

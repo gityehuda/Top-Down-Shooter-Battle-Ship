@@ -5,13 +5,19 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    private int health = 10;
+    public int health = 10;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+
+    //}
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Bullet")
+         if(collision.gameObject.tag == "Bullet")
         {
             health--;
+            Debug.Log("enemy hit");
         }
     }
 

@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    public Rigidbody2D rb2d;
+   // public Rigidbody2D rb2d;
     public Weapon weapon;
     public Weapon weapon2;
     private int health = 10;
@@ -43,11 +43,11 @@ public class PlayerController : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(0, 0, 0.1f);
+            transform.Rotate(0, 0, 0.5f);
         }
         else if(Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(0, 0, -0.1f);
+            transform.Rotate(0, 0, -0.5f);
         }    
 
         if(Input.GetKey(KeyCode.W))
@@ -69,6 +69,11 @@ public class PlayerController : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "EnemyBullet")
         {
