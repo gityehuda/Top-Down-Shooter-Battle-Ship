@@ -5,10 +5,10 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
-   // public Rigidbody2D rb2d;
+    // public Rigidbody2D rb2d;
     public Weapon weapon;
     public Weapon weapon2;
-    private int health = 10;
+    public int health = 10;
 
     Vector2 moveDirection;
     Vector2 mousePosition;
@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -30,9 +30,9 @@ public class PlayerController : MonoBehaviour
         //moveDirection.y += Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
         //transform.position = moveDirection;  
         MoveandRotate();
-        Attack();                       
+        Attack();
 
-        if(health < 0)
+        if (health <= 0)
         {
             Destroy(gameObject);
         }
@@ -41,16 +41,16 @@ public class PlayerController : MonoBehaviour
 
     private void MoveandRotate()
     {
-        if(Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A))
         {
             transform.Rotate(0, 0, 0.5f);
         }
-        else if(Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.D))
         {
             transform.Rotate(0, 0, -0.5f);
-        }    
+        }
 
-        if(Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
             transform.position += transform.right * moveSpeed * Time.deltaTime;
         }
@@ -59,27 +59,28 @@ public class PlayerController : MonoBehaviour
 
     private void Attack()
     {
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
-           
-              weapon.Fire();
+
+            weapon.Fire();
             weapon2.Fire();
-          
+
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.gameObject.tag == "EnemyBullet")
+        if (collision.gameObject.tag == "EnemyBullet")
         {
             health--;
         }
-    }
+ 
+    }          
+
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+
+    //}
 
     private void FixedUpdate()
     {

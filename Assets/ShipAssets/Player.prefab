@@ -105,7 +105,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 2122892560005292402, guid: a2c088688aed81846ba6eca73922a6d9, type: 3}
+  bulletPrefab: {fileID: 2122892560005292402, guid: b6aadc695a66ead4e86591d7516c954b, type: 3}
   firePoint: {fileID: 3790260770521450569}
   fireForce: 20
 --- !u!1 &7690570102264212551
@@ -144,7 +144,6 @@ GameObject:
   - component: {fileID: 2119614938565977584}
   - component: {fileID: 6304668739142682776}
   - component: {fileID: 4696258146456646039}
-  - component: {fileID: 2575803126200701804}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -478,33 +477,6 @@ PolygonCollider2D:
       - {x: -4.1483107, y: -10.1166315}
       - {x: -4.164707, y: -10.001856}
   m_UseDelaunayMesh: 0
---- !u!50 &2575803126200701804
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7690570102264212551}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &7973979759020890524
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,7 +489,6 @@ GameObject:
   - component: {fileID: 3599094548118267511}
   - component: {fileID: 1770952435279837757}
   - component: {fileID: 5173442876666582450}
-  - component: {fileID: 7247438802517326796}
   m_Layer: 0
   m_Name: Weapon
   m_TagString: Untagged
@@ -605,7 +576,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 2122892560005292402, guid: a2c088688aed81846ba6eca73922a6d9, type: 3}
+  bulletPrefab: {fileID: 2122892560005292402, guid: b6aadc695a66ead4e86591d7516c954b, type: 3}
   firePoint: {fileID: 7184701792034653335}
   fireForce: 20
 --- !u!114 &5173442876666582450
@@ -620,34 +591,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e7dc64f079160f44a0784ed205e3a65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb2d: {fileID: 7247438802517326796}
---- !u!50 &7247438802517326796
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7973979759020890524}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &8955723350350962793
 GameObject:
   m_ObjectHideFlags: 0

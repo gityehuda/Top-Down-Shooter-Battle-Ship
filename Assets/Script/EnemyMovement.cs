@@ -17,7 +17,7 @@ public class EnemyMovement : MonoBehaviour
     public Transform player;
     public Weapon weapon;
     public Weapon weapon2;
-    private Rigidbody2D rb2d;
+    //private Rigidbody2D rb2d;
    // private Moveable mymoveable;
 
     public float distanceToFire = 5f;
@@ -34,7 +34,7 @@ public class EnemyMovement : MonoBehaviour
     void Start()
     {
         currentState = State.Chase;             
-        rb2d = GetComponent<Rigidbody2D>(); 
+        //rb2d = GetComponent<Rigidbody2D>(); 
         weapon = transform.GetChild(0).GetComponent<Weapon>();        
          player = GameObject.FindGameObjectWithTag("Player").transform;
       //  mymoveable = GetComponent<Moveable>();
