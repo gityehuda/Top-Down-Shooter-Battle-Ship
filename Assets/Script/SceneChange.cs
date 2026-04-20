@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class SceneChange : MonoBehaviour
 {
-    public void ChangeScene(string scene)
+    public string sceneName;
+    public void ChangeScene()
     {
-        SceneManager.LoadScene(scene);              
+        SceneManager.LoadScene(sceneName);              
     }
 
     // Start is called before the first frame update
@@ -21,4 +22,10 @@ public class SceneChange : MonoBehaviour
     {
         
     }
+
+    public void StoreBattleName(string battleName)
+    {
+        sceneName = battleName;                 
+    }
+
 }

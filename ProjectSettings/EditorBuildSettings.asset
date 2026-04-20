@@ -12,6 +12,24 @@ EditorBuildSettings:
     path: Assets/Scenes/CampaignMission.unity
     guid: c05a845aba9bfd54bb540b64289d1702
   - enabled: 1
-    path: Assets/Scenes/BattleScene.unity
+    path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Gabbard.unity
+    guid: 946ffbf4f82387c4bbbac96a5780ce2d
+  - enabled: 1
+    path: Assets/Scenes/Guadalcanal.unity
+    guid: 82166585ddbccbc42abf990b1f415ea4
+  - enabled: 1
+    path: Assets/Scenes/Midway.unity
+    guid: 60802bf4890cba14b83b8e49d427c18e
+  - enabled: 1
+    path: Assets/Scenes/PearlHarbor.unity
+    guid: 06a0f22bb330fe94781a209b1d2d11ff
+  - enabled: 1
+    path: Assets/Scenes/Denmark_Strait.unity
+    guid: 9f1e9868bdb77394d864bbbc084dffa9
+  - enabled: 1
+    path: Assets/Scenes/Trafalgar.unity
+    guid: 1c166e64ccf8a4841896e7e3c82d1397
   m_configObjects: {}

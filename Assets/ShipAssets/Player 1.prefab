@@ -146,7 +146,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e7dc64f079160f44a0784ed205e3a65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb2d: {fileID: 2279353165023640324}
 --- !u!50 &2279353165023640324
 Rigidbody2D:
   serializedVersion: 4
@@ -184,7 +183,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3161771553264164984}
   - component: {fileID: 4477329123189825945}
-  - component: {fileID: 5222185649673253224}
+  - component: {fileID: 8026724037712153395}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Untagged
@@ -260,7 +259,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5222185649673253224
+--- !u!114 &8026724037712153395
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -269,9 +268,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7728184538576721510}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9030c01cb1f49c49a054455d3e56fc9, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e158aa8e0b604a47a3013dac9098c1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
   weapon: {fileID: 4698243822938351238}
-  weapon2: {fileID: 0}
+  health: 10
