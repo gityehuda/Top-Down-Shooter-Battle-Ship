@@ -23,6 +23,7 @@ public class EnemyMovement1 : MonoBehaviour
     private float rotationSpeed = 0.1f;
     private float sideDistance = 5f;
     float side = 1f;
+    private float dist;
     private Quaternion previousRotation;
     // Start is called before the first frame update
     void Start()
@@ -38,11 +39,11 @@ public class EnemyMovement1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float dist = Vector2.Distance(transform.position, player.transform.position);
-        Debug.Log("distance" + dist);
+      
         if (player != null)
         {
-         
+           dist = Vector2.Distance(transform.position, player.transform.position);
+           Debug.Log("distance" + dist);
 
           
 
