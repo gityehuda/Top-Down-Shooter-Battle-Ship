@@ -41,14 +41,15 @@ public class EnemyMovement : MonoBehaviour
         timeToFire = fireRate;  
     }
     Vector2 direction;
+    private float dist;
     // Update is called once per frame
     void Update()
     {
-        float dist = Vector2.Distance(transform.position, player.transform.position);
-        Debug.Log("distance" + dist);
+     
         if (player != null)
         {
-         
+          dist = Vector2.Distance(transform.position, player.transform.position);
+          Debug.Log("distance" + dist);
 
           
 
