@@ -1,14 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    // public Rigidbody2D rb2d;
+    public Rigidbody2D rb2d;
     public Weapon weapon;
     public Weapon weapon2;
     public int health = 10;
+    public float fireRate = 1f;
+    private float timer = 0;
+    public float turningSpeed = 0.1f;
+
 
     Vector2 moveDirection;
     Vector2 mousePosition;
@@ -22,8 +27,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
+        moveDirection.x = Input.GetAxisRaw("Horizontal");
+        moveDirection.y = Input.GetAxisRaw("Vertical");
 
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         //  moveDirection = new Vector2(moveX, moveY).normalized;
@@ -43,28 +48,37 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(0, 0, 0.5f);
+            transform.Rotate(0, 0, turningSpeed);
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(0, 0, -0.5f);
+            transform.Rotate(0, 0, turningSpeed);
         }
 
         if (Input.GetKey(KeyCode.W))
         {
-            transform.position += transform.right * moveSpeed * Time.deltaTime;
+           rb2d.velocity = transform.right * moveSpeed * Time.deltaTime;
+            Debug.Log("key pressed");
+        }
+        else
+        {
+            float decelerationRate = 1f;
+            rb2d.velocity = Vector2.Lerp(rb2d.velocity, Vector2.zero, decelerationRate * Time.deltaTime);
         }
 
     }
 
     private void Attack()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && timer <= 0)
         {
-
             weapon.Fire();
             weapon2.Fire();
-
+            timer = fireRate;
+        }
+        else
+        {
+            timer -= Time.deltaTime;                    
         }
     }
 

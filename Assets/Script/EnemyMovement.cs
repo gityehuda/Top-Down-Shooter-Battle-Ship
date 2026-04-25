@@ -26,7 +26,7 @@ public class EnemyMovement : MonoBehaviour
     public float fireRate;
     private float timeToFire;
     //  public GameObject bulletPrefab; 
-    private float rotationSpeed = 0.1f;
+    public float rotationSpeed = 0.1f;
     private float sideDistance = 5f;
     float side = 1f;
     private Quaternion previousRotation;
@@ -74,8 +74,8 @@ public class EnemyMovement : MonoBehaviour
                 //    previousRotation = transform.rotation;
                 //}
                 //currentState = State.Broadside;
-                float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-                transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, angle), 5f * Time.deltaTime);
+                float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;
+                transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, angle), rotationSpeed * Time.deltaTime);
                 // Debug.Log("Distance to Stop " + distanceToStop);
                 moveSpeed = 0;
                 Shoot();
@@ -130,7 +130,7 @@ public class EnemyMovement : MonoBehaviour
     private void RotateTowardTarget()
     {
         Vector2 targetDirection = player.position - transform.position; 
-        float angle = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg - 90f;
+        float angle = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg;
         Quaternion q = Quaternion.Euler(new Vector3(0, 0, angle));
         transform.localRotation = Quaternion.Slerp(transform.localRotation, q, rotationSpeed);
     }
