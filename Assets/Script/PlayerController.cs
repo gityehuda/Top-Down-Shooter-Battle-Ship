@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public Rigidbody2D rb2d;
-    public Weapon weapon;
-    public Weapon weapon2;
+    public Weapon[] weapons;
     public int health = 10;
     public float fireRate = 1f;
     private float timer = 0;
@@ -52,12 +52,20 @@ public class PlayerController : MonoBehaviour
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(0, 0, turningSpeed);
+            transform.Rotate(0, 0, -turningSpeed);
         }
 
         if (Input.GetKey(KeyCode.W))
         {
-           rb2d.velocity = transform.right * moveSpeed * Time.deltaTime;
+            if(SceneManager.GetActiveScene().name == "Trafalgar")
+            {
+                rb2d.velocity = transform.up * moveSpeed * Time.deltaTime;
+            }
+            else
+            {
+                rb2d.velocity = transform.up * moveSpeed * Time.deltaTime;
+            }
+          
             Debug.Log("key pressed");
         }
         else
@@ -72,9 +80,11 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && timer <= 0)
         {
-            weapon.Fire();
-            weapon2.Fire();
-            timer = fireRate;
+           foreach(Weapon weapon in weapons)
+            {
+                weapon.Fire();
+                timer = fireRate;
+            }
         }
         else
         {

@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Trafalgar.unity
     guid: 1c166e64ccf8a4841896e7e3c82d1397
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: dece211b51938dc45b05ec1c0606a548
   m_configObjects: {}

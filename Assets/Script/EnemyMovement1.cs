@@ -8,7 +8,7 @@ using UnityEngine;
 public class EnemyMovement1 : MonoBehaviour
 {
     State currentState;
-    private float moveSpeed = 3f;
+    private float moveSpeed = 10f;
     public Transform player;
     public Weapon weapon;
     //private Rigidbody2D rb2d;
@@ -46,13 +46,14 @@ public class EnemyMovement1 : MonoBehaviour
            Debug.Log("distance" + dist);
 
           
-
+                      
         }
 
        // Debug.Log("current distance: " + Vector2.Distance(player.position, transform.position));
-        if (player != null && dist <= 50f)
+        if (player != null && dist <= 200f)
         {
             //  moveSpeed = 4f;
+            Debug.Log("chasing");
             direction = player.position - transform.position;
             transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
             //Vector2 sideDirection = new Vector2(-direction.y, -direction.x);
@@ -83,7 +84,7 @@ public class EnemyMovement1 : MonoBehaviour
                 //    Debug.Log("rotated1");
                 //}
                 currentState = State.Chase;         
-                moveSpeed = 4f;
+                moveSpeed = 10f;
                 RotateTowardTarget();
             }
            

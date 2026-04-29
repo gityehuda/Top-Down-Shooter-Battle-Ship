@@ -8,11 +8,11 @@ public class EnemyHealth : MonoBehaviour
 {
     public float maxhealth = 10;
     [SerializeField] private Image healthImage;
-    private float currentHealth;
+    public float currentHealth;
     //private void OnCollisionEnter2D(Collision2D collision)
     //{
 
-    //}  
+    //}
 
     void Start()
     {
@@ -33,11 +33,12 @@ public class EnemyHealth : MonoBehaviour
         healthImage.fillAmount = currentHealth / maxhealth;
         float enemyHealth = healthImage.fillAmount;
         healthImage.transform.position = transform.position;
-        healthImage.transform.rotation = Camera.main.transform.rotation;                                                
+        healthImage.transform.rotation = Camera.main.transform.rotation;
         Debug.Log("current health: " + enemyHealth);
-        if(currentHealth == 0)
+        if (currentHealth <= 0)
         {
-            Destroy(gameObject);                                
-        }  
+            Destroy(gameObject);
+        }
     }
 }
+           

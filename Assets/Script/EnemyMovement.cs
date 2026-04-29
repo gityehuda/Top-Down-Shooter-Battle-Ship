@@ -15,8 +15,7 @@ public class EnemyMovement : MonoBehaviour
     State currentState;
     private float moveSpeed = 3f;
     public Transform player;
-    public Weapon weapon;
-    public Weapon weapon2;
+    public Weapon[] weapons;
     //private Rigidbody2D rb2d;
    // private Moveable mymoveable;
 
@@ -35,7 +34,7 @@ public class EnemyMovement : MonoBehaviour
     {
         currentState = State.Chase;             
         //rb2d = GetComponent<Rigidbody2D>(); 
-        weapon = transform.GetChild(0).GetComponent<Weapon>();        
+         
          player = GameObject.FindGameObjectWithTag("Player").transform;
       //  mymoveable = GetComponent<Moveable>();
         timeToFire = fireRate;  
@@ -74,8 +73,8 @@ public class EnemyMovement : MonoBehaviour
                 //    previousRotation = transform.rotation;
                 //}
                 //currentState = State.Broadside;
-                float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;
-                transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, angle), rotationSpeed * Time.deltaTime);
+                float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+                transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, angle), rotationSpeed * Time.deltaTime);       
                 // Debug.Log("Distance to Stop " + distanceToStop);
                 moveSpeed = 0;
                 Shoot();
@@ -116,8 +115,10 @@ public class EnemyMovement : MonoBehaviour
 
         if(timeToFire <= 0)
         {
-            weapon.Fire();
-            weapon2.Fire();                                                 
+            foreach(Weapon weapon in weapons)
+            {
+                weapon.Fire();
+            }                                           
             Debug.Log("Shooted");
             timeToFire = fireRate;
         }
@@ -127,12 +128,12 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
-    private void RotateTowardTarget()
+    private void RotateTowardTarget()      
     {
         Vector2 targetDirection = player.position - transform.position; 
-        float angle = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg;
+        float angle = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg - 90f;
         Quaternion q = Quaternion.Euler(new Vector3(0, 0, angle));
-        transform.localRotation = Quaternion.Slerp(transform.localRotation, q, rotationSpeed);
+        transform.localRotation = Quaternion.Slerp(transform.localRotation, q, rotationSpeed * Time.deltaTime);
     }
 
     private void RotatetoChasePlayer()
