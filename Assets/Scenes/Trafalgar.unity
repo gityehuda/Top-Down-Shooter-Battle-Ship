@@ -314,7 +314,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 92, y: 56, z: 0}
-  m_LocalScale: {x: 763.8557, y: 574.4432, z: 1.5686946}
+  m_LocalScale: {x: 1466.0682, y: 1102.5288, z: 3.0107954}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -504,7 +504,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -524,6 +524,7 @@ RectTransform:
   - {fileID: 4268544831214203872}
   - {fileID: 1360318284447787811}
   - {fileID: 6704006416386699454}
+  - {fileID: 3517624122654083079}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -6951,8 +6952,9 @@ GameObject:
   - component: {fileID: 8704454823631165604}
   - component: {fileID: 8704454823631165603}
   - component: {fileID: 8704454823631165602}
+  - component: {fileID: 8704454823631165605}
   m_Layer: 0
-  m_Name: trafalgar_threedecker
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8631,6 +8633,24 @@ GameObject:
   - component: {fileID: 1663501323045049194}
   m_Layer: 0
   m_Name: Weapon (18)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &545239695840843976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3208951473751491362}
+  - component: {fileID: 2268850516817233252}
+  - component: {fileID: 5113104340181572028}
+  m_Layer: 5
+  m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12019,7 +12039,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 315af1f09445ff64bbbe64a758cfe7df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxhealth: 10
+  maxhealth: 100
   healthImage: {fileID: 6591403709516041395}
   currentHealth: 0
 --- !u!1 &772985468007885664
@@ -15453,7 +15473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 315af1f09445ff64bbbe64a758cfe7df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxhealth: 10
+  maxhealth: 100
   healthImage: {fileID: 2382491258479739265}
   currentHealth: 0
 --- !u!114 &972086524974494827
@@ -33360,6 +33380,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e7dc64f079160f44a0784ed205e3a65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!222 &2268850516817233252
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545239695840843976}
+  m_CullTransparentMesh: 1
 --- !u!114 &2269224889036146442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36302,7 +36330,7 @@ GameObject:
   - component: {fileID: 3130448856038862549}
   - component: {fileID: 7730791467634968551}
   m_Layer: 0
-  m_Name: trafalgar_frigate_spain
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45454,7 +45482,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 400
-  rb2d: {fileID: 6491680352905653721}
   weapons:
   - {fileID: 6607844371358281360}
   - {fileID: 2190885322043015971}
@@ -47676,6 +47703,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4944683670324266339}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!224 &3208951473751491362
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545239695840843976}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.175, y: 1.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3517624122654083079}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -25.8, y: -6}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &3209002000459836655
 GameObject:
   m_ObjectHideFlags: 0
@@ -49983,7 +50029,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 400
-  rb2d: {fileID: 3349908143349795224}
   weapons:
   - {fileID: 9005939176292026883}
   - {fileID: 6213178419013113489}
@@ -52003,6 +52048,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7477011520605510638}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!222 &3502992192760278118
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3707369885546565975}
+  m_CullTransparentMesh: 1
 --- !u!114 &3505095082424523112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52196,6 +52249,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e7dc64f079160f44a0784ed205e3a65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &3517624122654083079
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3707369885546565975}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.6840546, y: 0.17530413, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3208951473751491362}
+  m_Father: {fileID: 1842678288}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -158.8, y: -102.2}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3519021531532928632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55202,6 +55275,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8510906180515304510}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3707369885546565975
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3517624122654083079}
+  - component: {fileID: 3502992192760278118}
+  - component: {fileID: 5392638877527302092}
+  m_Layer: 5
+  m_Name: Health Bar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &3707486552113876741
 Transform:
   m_ObjectHideFlags: 0
@@ -63097,7 +63188,7 @@ GameObject:
   - component: {fileID: 486666980543117079}
   - component: {fileID: 9179255782575772103}
   m_Layer: 0
-  m_Name: trafalgar_threedecker_spain
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74018,7 +74109,7 @@ GameObject:
   - component: {fileID: 7987603975688865901}
   - component: {fileID: 7694718228322446011}
   m_Layer: 5
-  m_Name: Pause text
+  m_Name: Game Over Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75554,6 +75645,95 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2520209135245192543}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5113104340181572028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545239695840843976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4279045390
+  m_fontColor: {r: 0.05660379, g: 0.052064806, b: 0.052064806, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &5115136682009898306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78739,7 +78919,7 @@ GameObject:
   - component: {fileID: 4338972633472094531}
   - component: {fileID: 771021661027433674}
   m_Layer: 0
-  m_Name: trafalgar_single_decker_spain
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79660,6 +79840,36 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 5603515592308784551}
   fireForce: 20
+--- !u!114 &5392638877527302092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3707369885546565975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -146128344, guid: 824ae2cf97f3fce42abfc1ec451a2e5a, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!4 &5393129691684079712
 Transform:
   m_ObjectHideFlags: 0
@@ -88421,7 +88631,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 400
-  rb2d: {fileID: 5990559335585910412}
   weapons:
   - {fileID: 7438877934346672356}
   - {fileID: 9058471843187212830}
@@ -94732,6 +94941,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6228178033209829365}
   - component: {fileID: 5726670488966639358}
+  - component: {fileID: 6424016638309675782}
   m_Layer: 0
   m_Name: trafalgar 2
   m_TagString: Untagged
@@ -94739,6 +94949,146 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!60 &6424016638309675782
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6424016638309675781}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 20, y: 20}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.47700003, y: -0.467}
+      - {x: 0.47450003, y: -0.4595}
+      - {x: 0.47000003, y: -0.44900003}
+      - {x: 0.4665, y: -0.44400004}
+      - {x: 0.45900002, y: -0.439}
+      - {x: 0.44500002, y: -0.43950003}
+      - {x: 0.43850002, y: -0.44050002}
+      - {x: 0.43150002, y: -0.439}
+      - {x: 0.4225, y: -0.43950003}
+      - {x: 0.409, y: -0.441}
+      - {x: 0.3955, y: -0.44500002}
+      - {x: 0.3855, y: -0.448}
+      - {x: 0.38200003, y: -0.45100003}
+      - {x: 0.36800003, y: -0.45000002}
+      - {x: 0.3625, y: -0.4505}
+      - {x: 0.35950002, y: -0.45250002}
+      - {x: 0.34300002, y: -0.4505}
+      - {x: 0.32950002, y: -0.44900003}
+      - {x: 0.317, y: -0.448}
+      - {x: 0.3075, y: -0.44500002}
+      - {x: 0.28800002, y: -0.439}
+      - {x: 0.28100002, y: -0.439}
+      - {x: 0.272, y: -0.441}
+      - {x: 0.25750002, y: -0.42800003}
+      - {x: 0.24550001, y: -0.42200002}
+      - {x: 0.231, y: -0.41900003}
+      - {x: 0.22700001, y: -0.4045}
+      - {x: 0.223, y: -0.40150002}
+      - {x: 0.21450001, y: -0.3975}
+      - {x: 0.20750001, y: -0.3955}
+      - {x: 0.20650001, y: -0.38900003}
+      - {x: 0.2185, y: -0.3815}
+      - {x: 0.22550002, y: -0.37250003}
+      - {x: 0.22800002, y: -0.36350003}
+      - {x: 0.22850001, y: -0.34950003}
+      - {x: 0.22700001, y: -0.34100002}
+      - {x: 0.22600001, y: -0.337}
+      - {x: 0.2205, y: -0.3305}
+      - {x: 0.208, y: -0.32450002}
+      - {x: 0.202, y: -0.3165}
+      - {x: 0.19800001, y: -0.3125}
+      - {x: 0.19500001, y: -0.31100002}
+      - {x: 0.185, y: -0.31050003}
+      - {x: 0.17750001, y: -0.30650002}
+      - {x: 0.1755, y: -0.3055}
+      - {x: 0.162, y: -0.3055}
+      - {x: 0.15400001, y: -0.31}
+      - {x: 0.142, y: -0.3075}
+      - {x: 0.13700001, y: -0.307}
+      - {x: 0.12750001, y: -0.3095}
+      - {x: 0.115, y: -0.31}
+      - {x: 0.11000001, y: -0.3115}
+      - {x: 0.1075, y: -0.3125}
+      - {x: 0.101, y: -0.319}
+      - {x: 0.09, y: -0.31500003}
+      - {x: 0.067, y: -0.31500003}
+      - {x: 0.058500003, y: -0.31350002}
+      - {x: 0.043500002, y: -0.30800003}
+      - {x: 0.037, y: -0.30850002}
+      - {x: 0.032500003, y: -0.31}
+      - {x: 0.0185, y: -0.31050003}
+      - {x: 0.013, y: -0.31300002}
+      - {x: 0.0055000004, y: -0.321}
+      - {x: 0.003, y: -0.324}
+      - {x: -0.0015, y: -0.33350003}
+      - {x: -0.0055000004, y: -0.34800002}
+      - {x: -0.0145000005, y: -0.3555}
+      - {x: -0.0215, y: -0.36350003}
+      - {x: -0.026500002, y: -0.374}
+      - {x: -0.029500002, y: -0.384}
+      - {x: -0.034, y: -0.38750002}
+      - {x: -0.051500004, y: -0.38750002}
+      - {x: -0.063, y: -0.39100003}
+      - {x: -0.07300001, y: -0.39600003}
+      - {x: -0.09200001, y: -0.397}
+      - {x: -0.0965, y: -0.39850003}
+      - {x: -0.101, y: -0.40150002}
+      - {x: -0.106000006, y: -0.4065}
+      - {x: -0.113000005, y: -0.416}
+      - {x: -0.11800001, y: -0.425}
+      - {x: -0.119, y: -0.43}
+      - {x: -0.120000005, y: -0.43400002}
+      - {x: -0.120500006, y: -0.43850002}
+      - {x: -0.13250001, y: -0.44300002}
+      - {x: -0.13900001, y: -0.44900003}
+      - {x: -0.142, y: -0.453}
+      - {x: -0.14750001, y: -0.46500003}
+      - {x: -0.1515, y: -0.47950003}
+      - {x: -0.16000001, y: -0.48850003}
+      - {x: -0.165, y: -0.49600002}
+      - {x: -0.165, y: -0.5}
+      - {x: 0.4785, y: -0.5}
+      - {x: 0.4785, y: -0.49800003}
+      - {x: 0.47800002, y: -0.49550003}
+      - {x: 0.47750002, y: -0.4715}
+  m_UseDelaunayMesh: 0
 --- !u!114 &6425635321101660493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104711,7 +105061,7 @@ RectTransform:
   m_GameObject: {fileID: 4151853438992708596}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.4129, y: 3.4129, z: 3.4129}
+  m_LocalScale: {x: 1.5728008, y: 1.5728008, z: 1.5728008}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5051139903225303757}
@@ -104719,7 +105069,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -156}
+  m_AnchoredPosition: {x: 5, y: -75}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7106463351594003426
@@ -104763,7 +105113,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 700
-  rb2d: {fileID: 6731673897021397681}
   weapons:
   - {fileID: 8384022971542020741}
   - {fileID: 9220840205338746643}
@@ -106647,7 +106996,7 @@ GameObject:
   - component: {fileID: 6998950007978803649}
   - component: {fileID: 969463930580366647}
   m_Layer: 0
-  m_Name: trafalgar_two_decker_spain
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107288,14 +107637,14 @@ RectTransform:
   m_GameObject: {fileID: 4994054305480279865}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.59569, y: 4.59569, z: 4.59569}
+  m_LocalScale: {x: 1.6305047, y: 1.6305047, z: 1.6305047}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6704006416386699454}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5, y: 341}
+  m_AnchoredPosition: {x: 47, y: 92}
   m_SizeDelta: {x: 284.0313, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7312512831588310438
@@ -111784,7 +112133,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 400
-  rb2d: {fileID: 7587930874245046658}
   weapons:
   - {fileID: 3819694521072807964}
   - {fileID: 786846975661714582}
@@ -113509,7 +113857,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 62.731674, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -114011,7 +114359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 315af1f09445ff64bbbe64a758cfe7df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxhealth: 10
+  maxhealth: 100
   healthImage: {fileID: 6735757162001787923}
   currentHealth: 0
 --- !u!1 &7734159546283131198
@@ -130587,6 +130935,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8024911354213359100}
   - component: {fileID: 6776410799682600907}
+  - component: {fileID: 8652400044788957769}
   m_Layer: 0
   m_Name: trafalgar 1
   m_TagString: Untagged
@@ -130594,6 +130943,217 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!60 &8652400044788957769
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8652400044788957768}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 20, y: 20}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.1155, y: -0.25750002}
+      - {x: 0.1305, y: -0.25500003}
+      - {x: 0.135, y: -0.257}
+      - {x: 0.1525, y: -0.25750002}
+      - {x: 0.16550002, y: -0.2535}
+      - {x: 0.17150001, y: -0.2495}
+      - {x: 0.17400001, y: -0.24550001}
+      - {x: 0.17500001, y: -0.2425}
+      - {x: 0.1755, y: -0.23300001}
+      - {x: 0.172, y: -0.22200002}
+      - {x: 0.177, y: -0.22700001}
+      - {x: 0.1815, y: -0.22900002}
+      - {x: 0.1885, y: -0.23150001}
+      - {x: 0.1965, y: -0.23200001}
+      - {x: 0.209, y: -0.22900002}
+      - {x: 0.21300001, y: -0.224}
+      - {x: 0.22450002, y: -0.20650001}
+      - {x: 0.22700001, y: -0.201}
+      - {x: 0.2265, y: -0.1835}
+      - {x: 0.22600001, y: -0.1815}
+      - {x: 0.22500001, y: -0.172}
+      - {x: 0.224, y: -0.162}
+      - {x: 0.2275, y: -0.15300001}
+      - {x: 0.2415, y: -0.14850001}
+      - {x: 0.24750002, y: -0.1435}
+      - {x: 0.2495, y: -0.1315}
+      - {x: 0.2515, y: -0.128}
+      - {x: 0.25950003, y: -0.123500004}
+      - {x: 0.2675, y: -0.11850001}
+      - {x: 0.273, y: -0.113000005}
+      - {x: 0.2825, y: -0.1075}
+      - {x: 0.2955, y: -0.105500005}
+      - {x: 0.30600002, y: -0.09950001}
+      - {x: 0.3145, y: -0.09200001}
+      - {x: 0.33150002, y: -0.0925}
+      - {x: 0.3395, y: -0.094500005}
+      - {x: 0.35650003, y: -0.094500005}
+      - {x: 0.36150002, y: -0.0925}
+      - {x: 0.37600002, y: -0.0825}
+      - {x: 0.38500002, y: -0.083000004}
+      - {x: 0.393, y: -0.080000006}
+      - {x: 0.407, y: -0.071}
+      - {x: 0.41250002, y: -0.065000005}
+      - {x: 0.41550002, y: -0.0595}
+      - {x: 0.41700003, y: -0.055500004}
+      - {x: 0.42850003, y: -0.038500004}
+      - {x: 0.437, y: -0.0335}
+      - {x: 0.44200003, y: -0.028}
+      - {x: 0.44900003, y: -0.0195}
+      - {x: 0.46050003, y: -0.021000002}
+      - {x: 0.47000003, y: -0.021000002}
+      - {x: 0.48600003, y: -0.0195}
+      - {x: 0.49850002, y: -0.015500001}
+      - {x: 0.5, y: -0.015000001}
+      - {x: 0.5, y: 0.5}
+      - {x: -0.5, y: 0.5}
+      - {x: -0.5, y: 0.30400002}
+      - {x: -0.49650002, y: 0.3055}
+      - {x: -0.49250004, y: 0.30850002}
+      - {x: -0.483, y: 0.314}
+      - {x: -0.47650003, y: 0.31100002}
+      - {x: -0.46150002, y: 0.312}
+      - {x: -0.4575, y: 0.30850002}
+      - {x: -0.45100003, y: 0.3055}
+      - {x: -0.44550002, y: 0.30400002}
+      - {x: -0.43850002, y: 0.296}
+      - {x: -0.4185, y: 0.286}
+      - {x: -0.409, y: 0.2845}
+      - {x: -0.39900002, y: 0.2815}
+      - {x: -0.38700002, y: 0.282}
+      - {x: -0.38200003, y: 0.28}
+      - {x: -0.37350002, y: 0.27850002}
+      - {x: -0.3625, y: 0.26950002}
+      - {x: -0.354, y: 0.2655}
+      - {x: -0.34350002, y: 0.26700002}
+      - {x: -0.342, y: 0.25950003}
+      - {x: -0.3395, y: 0.2525}
+      - {x: -0.335, y: 0.246}
+      - {x: -0.3285, y: 0.24000001}
+      - {x: -0.32750002, y: 0.2345}
+      - {x: -0.3255, y: 0.22850001}
+      - {x: -0.319, y: 0.22150001}
+      - {x: -0.29700002, y: 0.2115}
+      - {x: -0.2975, y: 0.20650001}
+      - {x: -0.2975, y: 0.1895}
+      - {x: -0.2955, y: 0.1825}
+      - {x: -0.2985, y: 0.1745}
+      - {x: -0.29950002, y: 0.17}
+      - {x: -0.29500002, y: 0.165}
+      - {x: -0.2795, y: 0.15750001}
+      - {x: -0.2675, y: 0.15550001}
+      - {x: -0.2615, y: 0.1585}
+      - {x: -0.25750002, y: 0.15}
+      - {x: -0.25550002, y: 0.147}
+      - {x: -0.24450001, y: 0.136}
+      - {x: -0.238, y: 0.132}
+      - {x: -0.2345, y: 0.119}
+      - {x: -0.23250002, y: 0.1115}
+      - {x: -0.22900002, y: 0.10700001}
+      - {x: -0.224, y: 0.1045}
+      - {x: -0.22800002, y: 0.0935}
+      - {x: -0.22950001, y: 0.0885}
+      - {x: -0.231, y: 0.079}
+      - {x: -0.23950002, y: 0.079500005}
+      - {x: -0.24750002, y: 0.076500006}
+      - {x: -0.2535, y: 0.065500006}
+      - {x: -0.25300002, y: 0.0445}
+      - {x: -0.25550002, y: 0.041500002}
+      - {x: -0.25950003, y: 0.029500002}
+      - {x: -0.259, y: 0.020000001}
+      - {x: -0.25750002, y: 0.016}
+      - {x: -0.2535, y: 0.0085}
+      - {x: -0.25500003, y: 0.0025000002}
+      - {x: -0.25500003, y: -0.002}
+      - {x: -0.2485, y: -0.010000001}
+      - {x: -0.23850001, y: -0.015500001}
+      - {x: -0.24700001, y: -0.020000001}
+      - {x: -0.2495, y: -0.024500001}
+      - {x: -0.24900001, y: -0.038500004}
+      - {x: -0.25, y: -0.044000003}
+      - {x: -0.2415, y: -0.060000002}
+      - {x: -0.22700001, y: -0.071}
+      - {x: -0.2205, y: -0.0745}
+      - {x: -0.216, y: -0.083500005}
+      - {x: -0.2115, y: -0.08800001}
+      - {x: -0.20750001, y: -0.09}
+      - {x: -0.19900002, y: -0.09}
+      - {x: -0.1835, y: -0.0965}
+      - {x: -0.17750001, y: -0.097500004}
+      - {x: -0.17, y: -0.098000005}
+      - {x: -0.1585, y: -0.094500005}
+      - {x: -0.1525, y: -0.1}
+      - {x: -0.14500001, y: -0.11750001}
+      - {x: -0.1385, y: -0.123}
+      - {x: -0.12900001, y: -0.1285}
+      - {x: -0.1305, y: -0.13550001}
+      - {x: -0.1305, y: -0.142}
+      - {x: -0.127, y: -0.15650001}
+      - {x: -0.126, y: -0.17150001}
+      - {x: -0.12450001, y: -0.17400001}
+      - {x: -0.12100001, y: -0.178}
+      - {x: -0.116500005, y: -0.18}
+      - {x: -0.087000005, y: -0.18050002}
+      - {x: -0.0735, y: -0.17750001}
+      - {x: -0.0675, y: -0.17250001}
+      - {x: -0.048, y: -0.1675}
+      - {x: -0.047000002, y: -0.16800001}
+      - {x: -0.034, y: -0.17}
+      - {x: -0.024, y: -0.1755}
+      - {x: -0.0195, y: -0.18450001}
+      - {x: -0.0175, y: -0.19350001}
+      - {x: -0.015500001, y: -0.19600001}
+      - {x: 0.011000001, y: -0.215}
+      - {x: 0.011000001, y: -0.2205}
+      - {x: 0.012, y: -0.22200002}
+      - {x: 0.015000001, y: -0.22800002}
+      - {x: 0.015000001, y: -0.23400001}
+      - {x: 0.0195, y: -0.23900001}
+      - {x: 0.024500001, y: -0.24350001}
+      - {x: 0.028500002, y: -0.252}
+      - {x: 0.037, y: -0.2605}
+      - {x: 0.051000003, y: -0.26200002}
+      - {x: 0.07300001, y: -0.26200002}
+      - {x: 0.079, y: -0.2605}
+      - {x: 0.09150001, y: -0.2565}
+      - {x: 0.10350001, y: -0.25750002}
+  m_UseDelaunayMesh: 0
 --- !u!4 &8653031470285093300
 Transform:
   m_ObjectHideFlags: 0
@@ -131595,8 +132155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9030c01cb1f49c49a054455d3e56fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 900
-  rb2d: {fileID: 8704454823631165603}
+  moveSpeed: 400
   weapons:
   - {fileID: 7435186031223305334}
   - {fileID: 2123405042585490978}
@@ -131705,9 +132264,23 @@ MonoBehaviour:
   - {fileID: 3802086972336740654}
   - {fileID: 3828163144276378940}
   - {fileID: 3878879170192986195}
-  health: 90
+  health: 100
   fireRate: 1
   turningSpeed: 0.4
+--- !u!114 &8704454823631165605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430851693990490571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a86e51a504cedc444bc53d4076bf8f63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthImage: {fileID: 5392638877527302092}
+  healthPercentage: {fileID: 5113104340181572028}
 --- !u!212 &8709720320041799914
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -138031,7 +138604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 315af1f09445ff64bbbe64a758cfe7df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxhealth: 10
+  maxhealth: 100
   healthImage: {fileID: 6863124119236511745}
   currentHealth: 0
 --- !u!4 &9182180774948592272

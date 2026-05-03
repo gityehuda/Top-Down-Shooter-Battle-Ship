@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController1 : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    // public Rigidbody2D rb2d;
+    private Rigidbody2D rb2d;
     public Weapon weapon;
     public int health = 10;
 
@@ -15,7 +15,7 @@ public class PlayerController1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        rb2d = GetComponent<Rigidbody2D>();                                             
     }
 
     // Update is called once per frame
@@ -51,7 +51,13 @@ public class PlayerController1 : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W))
         {
-            transform.position += transform.right * moveSpeed * Time.deltaTime;
+            rb2d.velocity = transform.right * moveSpeed * Time.deltaTime;
+                                
+        }
+        else         
+        {
+            float decelerationRate = 0.7f;
+            rb2d.velocity  = Vector2.Lerp(rb2d.velocity, Vector2.zero, decelerationRate * Time.deltaTime);
         }
 
     }

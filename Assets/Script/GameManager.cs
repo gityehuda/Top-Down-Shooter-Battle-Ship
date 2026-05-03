@@ -1,21 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject player;
-    private int playerHealth;
+    private float playerHealth;
     public GameObject gameoverScreen;
     // Start is called before the first frame update
+    private string sceneName;
     void Start()
     {
-        playerHealth = player.GetComponent<PlayerController>().health;  
+       
+       
     }
 
     // Update is called once per frame
     void Update()
     {
+        sceneName = SceneManager.GetActiveScene().name;
+        if(sceneName == "Trafalgar" || sceneName == "Gabbard")
+        {
+            playerHealth = player.GetComponent<PlayerController>().health;  
+        }
+        else   
+        {
+            playerHealth= player.GetComponent<PlayerController1>().health;   
+        }
         if(playerHealth <= 0)
         {
             GameOver();
@@ -36,5 +49,6 @@ public class GameManager : MonoBehaviour
     {
         gameoverScreen.SetActive(true);    
     }
+
 
 }

@@ -7,9 +7,9 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    public Rigidbody2D rb2d;
+    private Rigidbody2D rb2d;
     public Weapon[] weapons;
-    public int health = 10;
+    public float health = 10f;
     public float fireRate = 1f;
     private float timer = 0;
     public float turningSpeed = 0.1f;
@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        rb2d = GetComponent<Rigidbody2D>();                                                                     
     }
 
     // Update is called once per frame
@@ -57,21 +57,15 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W))
         {
-            if(SceneManager.GetActiveScene().name == "Trafalgar")
-            {
-                rb2d.velocity = transform.up * moveSpeed * Time.deltaTime;
-            }
-            else
-            {
-                rb2d.velocity = transform.up * moveSpeed * Time.deltaTime;
-            }
-          
+            
+                rb2d.velocity = transform.up * moveSpeed * Time.fixedDeltaTime;
+      
             Debug.Log("key pressed");
         }
         else
         {
-            float decelerationRate = 1f;
-            rb2d.velocity = Vector2.Lerp(rb2d.velocity, Vector2.zero, decelerationRate * Time.deltaTime);
+            float decelerationRate = 0.7f;        
+            rb2d.velocity = Vector2.Lerp(rb2d.velocity, Vector2.zero, decelerationRate * Time.fixedDeltaTime);
         }
 
     }
