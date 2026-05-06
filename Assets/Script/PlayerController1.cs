@@ -51,7 +51,7 @@ public class PlayerController1 : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W))
         {
-            rb2d.velocity = transform.right * moveSpeed * Time.deltaTime;
+            rb2d.AddForce(transform.right * moveSpeed);
                                 
         }
         else         

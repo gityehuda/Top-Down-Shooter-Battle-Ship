@@ -56,19 +56,9 @@ public class EnemyMovement1 : MonoBehaviour
             Debug.Log("chasing");
             direction = player.position - transform.position;
             transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
-            //Vector2 sideDirection = new Vector2(-direction.y, -direction.x);
-            //Vector2 targetPosition = (Vector2)player.position + sideDirection * side * sideDistance;
-
-            //Vector2 moveDirection = (targetPosition - (Vector2)transform.position).normalized;
-            //transform.position += (Vector3)moveDirection * moveSpeed * Time.deltaTime;
-
+           
             if (Vector2.Distance(player.position, transform.position) <= distanceToStop)
             {
-                //if (currentState == State.Chase)
-                //{
-                //    previousRotation = transform.rotation;
-                //}
-                //currentState = State.Broadside;
                 float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
                 transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, angle), 5f * Time.deltaTime);
                 // Debug.Log("Distance to Stop " + distanceToStop);
@@ -77,12 +67,6 @@ public class EnemyMovement1 : MonoBehaviour
             }
             else
             {
-                //if(currentState == State.Broadside)
-                //{
-                //    previousRotation = transform.rotation;
-                //    transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, previousRotation.z), 1f * Time.deltaTime);
-                //    Debug.Log("rotated1");
-                //}
                 currentState = State.Chase;         
                 moveSpeed = 10f;
                 RotateTowardTarget();
