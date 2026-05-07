@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class AllyMovement : MonoBehaviour
 {
-    public Transform player;
+   // public Transform player;
     private float followDistance = 3f;
     private float moveSpeed = 3f;
-    private float distanceToStop = 10f;
+    public float distanceToStop;
     private float fireRate = 1f;
-    public Transform firePoint;
-    public GameObject bulletPrefab;
+    //public Transform firePoint;
+    //public GameObject bulletPrefab;
     public Weapon[] weapons;
     private float timeToFire;
     private float rotationSpeed = 1f;
 
     private Rigidbody2D rb2d;
     private Transform targetEnemy;
-    private float nextFireTime;
+    private float nextFireTime;      
 
     enum State { Follow, Attack }
     State state;
@@ -31,9 +31,10 @@ public class AllyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {       
-        FindNearestEnemy();
+        FindNearestEnemy();     
 
-        if(targetEnemy == null)
+
+        if (targetEnemy == null)
         {
             return;
         }
@@ -47,7 +48,7 @@ public class AllyMovement : MonoBehaviour
         {
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, angle), 5f * Time.deltaTime);
-            // Debug.Log("Distance to Stop " + distanceToStop);
+            Debug.Log("Distance to Stop " + distanceToStop);
             moveSpeed = 0;
             Shoot();
         }
@@ -106,8 +107,8 @@ public class AllyMovement : MonoBehaviour
 
     void MovewhileRotating()
     {
-        Vector2 targetDirection = player.position - transform.position;
-        float angle = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg + 90f;
+        Vector2 targetDirection = targetEnemy.position - transform.position;
+        float angle = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg - 90f;
         Quaternion q = Quaternion.Euler(new Vector3(0, 0, angle));
         transform.localRotation = Quaternion.Slerp(transform.localRotation, q, rotationSpeed * Time.deltaTime);
     }

@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     public float fireRate = 1f;
     private float timer = 0;
     public float turningSpeed = 0.1f;
-
+    public float decelerationRate;
 
     Vector2 moveDirection;
     Vector2 mousePosition;
@@ -64,7 +64,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            float decelerationRate = 0.7f;        
+            decelerationRate = 0.7f;        
             rb2d.velocity = Vector2.Lerp(rb2d.velocity, Vector2.zero, decelerationRate * Time.fixedDeltaTime);
         }
 
