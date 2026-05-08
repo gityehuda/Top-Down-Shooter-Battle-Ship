@@ -12,8 +12,10 @@ public class PlayerController : MonoBehaviour
     public float health = 10f;
     public float fireRate = 1f;
     private float timer = 0;
-    public float turningSpeed = 0.1f;
+    public float turningSpeed = 1f;
     public float decelerationRate;
+    private float rotationInput;
+    private float moveInput;
 
     Vector2 moveDirection;
     Vector2 mousePosition;
@@ -21,50 +23,49 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb2d = GetComponent<Rigidbody2D>();                                                                     
+        rb2d = GetComponent<Rigidbody2D>();        
     }
 
     // Update is called once per frame
     void Update()
     {
-        moveDirection.x = Input.GetAxisRaw("Horizontal");
-        moveDirection.y = Input.GetAxisRaw("Vertical");
+        rotationInput = -Input.GetAxis("Horizontal");
+        float moveY = Input.GetAxisRaw("Vertical");
 
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        //  moveDirection = new Vector2(moveX, moveY).normalized;
+        //moveDirection = new Vector2(moveX, moveY).normalized;
         //moveDirection.y += Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
         //transform.position = moveDirection;  
         MoveandRotate();
         Attack();
 
-        if (health <= 0)
-        {
-            Destroy(gameObject);
-        }
-
     }
 
     private void MoveandRotate()
     {
-        if (Input.GetKey(KeyCode.A))
-        {
-            transform.Rotate(0, 0, turningSpeed);
-        }
-        else if (Input.GetKey(KeyCode.D))
-        {
-            transform.Rotate(0, 0, -turningSpeed);
-        }
+        //if (Input.GetKey(KeyCode.A))
+        //{
+        //    transform.Rotate(0, 0, turningSpeed);
+        //}
+        //else if (Input.GetKey(KeyCode.D))
+        //{
+        //    transform.Rotate(0, 0, -turningSpeed);
+        //}
+        float rotationAmount = rotationInput * turningSpeed * Time.fixedDeltaTime;
+        rb2d.MoveRotation(rb2d.rotation + rotationAmount);
+
 
         if (Input.GetKey(KeyCode.W))
         {
-            
-                rb2d.velocity = transform.up * moveSpeed * Time.fixedDeltaTime;
-      
+
+            rb2d.velocity = transform.up * moveSpeed * Time.fixedDeltaTime;
+
             Debug.Log("key pressed");
+       
         }
-        else
+
+        else if (Input.GetKey(KeyCode.S))
         {
-            decelerationRate = 0.7f;        
             rb2d.velocity = Vector2.Lerp(rb2d.velocity, Vector2.zero, decelerationRate * Time.fixedDeltaTime);
         }
 
@@ -103,6 +104,7 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
        
+        //rb2d.velocity = new Vector2(0, moveDirection.y * moveSpeed);
             
       /*  Vector2 aimDirection = mousePosition - rb2d.position;
         float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg - 90f;

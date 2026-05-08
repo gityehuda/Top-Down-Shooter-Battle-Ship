@@ -26650,7 +26650,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1481202224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47937,10 +47937,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1997993019999561461}
   - component: {fileID: 8069775224596109010}
+  - component: {fileID: 8069775224596109014}
   - component: {fileID: 8069775224596109011}
   - component: {fileID: 8069775224596109013}
   - component: {fileID: 8069775224596109012}
-  - component: {fileID: 8069775224596109014}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -53601,7 +53601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9030c01cb1f49c49a054455d3e56fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 200
+  moveSpeed: 400
   weapons:
   - {fileID: 1065079875120026805}
   - {fileID: 5737063545120616425}
@@ -53653,8 +53653,8 @@ MonoBehaviour:
   - {fileID: 6305982494051128668}
   health: 100
   fireRate: 1
-  turningSpeed: 1
-  decelerationRate: 0
+  turningSpeed: 10
+  decelerationRate: 0.4
 --- !u!60 &8069775224596109012
 PolygonCollider2D:
   m_ObjectHideFlags: 0
