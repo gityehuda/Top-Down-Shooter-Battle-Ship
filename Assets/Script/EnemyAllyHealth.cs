@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EnemyHealth : MonoBehaviour
+public class EnemyAllyHealth : MonoBehaviour
 {
     public float maxhealth = 10;
     [SerializeField] private Image healthImage;

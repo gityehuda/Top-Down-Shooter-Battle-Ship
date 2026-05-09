@@ -16,6 +16,7 @@ public class EnemyMovement : MonoBehaviour
     private float moveSpeed = 3f;
     public Transform player;
     public Weapon[] weapons;
+    [SerializeField] private Detection detector;
     //private Rigidbody2D rb2d;
    // private Moveable mymoveable;
 
@@ -32,9 +33,8 @@ public class EnemyMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentState = State.Chase;             
+        currentState = State.Chase;
         //rb2d = GetComponent<Rigidbody2D>(); 
-         
          player = GameObject.FindGameObjectWithTag("Player").transform;
       //  mymoveable = GetComponent<Moveable>();
         timeToFire = fireRate;  
@@ -52,13 +52,13 @@ public class EnemyMovement : MonoBehaviour
         }
 
        // Debug.Log("current distance: " + Vector2.Distance(player.position, transform.position));
-        if (player != null && dist <= 40f)
+        if(detector.isDetected == true)
         {
             //  moveSpeed = 4f;
-            direction = player.position - transform.position;
-            transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
+            direction = detector.detectedObject.transform.position - transform.position;
+            transform.position = Vector2.MoveTowards(transform.position, detector.detectedObject.transform.position, moveSpeed * Time.deltaTime);
 
-            if (Vector2.Distance(player.position, transform.position) <= distanceToStop)
+            if (Vector2.Distance(detector.detectedObject.transform.position, transform.position) <= distanceToStop)
             {
                 float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
                 transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, angle), rotationSpeed * Time.deltaTime);       
@@ -111,7 +111,7 @@ public class EnemyMovement : MonoBehaviour
 
     private void RotateTowardTarget()      
     {
-        Vector2 targetDirection = player.position - transform.position; 
+        Vector2 targetDirection = detector.detectedObject.transform.position - transform.position; 
         float angle = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg - 90f;
         Quaternion q = Quaternion.Euler(new Vector3(0, 0, angle));
         transform.localRotation = Quaternion.Slerp(transform.localRotation, q, rotationSpeed * Time.deltaTime);

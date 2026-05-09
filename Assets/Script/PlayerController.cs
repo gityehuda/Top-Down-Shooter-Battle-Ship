@@ -40,9 +40,9 @@ public class PlayerController : MonoBehaviour
         Attack();
 
     }
-
+    bool isMoved = false;
     private void MoveandRotate()
-    {
+    {   
         //if (Input.GetKey(KeyCode.A))
         //{
         //    transform.Rotate(0, 0, turningSpeed);
@@ -55,18 +55,23 @@ public class PlayerController : MonoBehaviour
         rb2d.MoveRotation(rb2d.rotation + rotationAmount);
 
 
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W))
         {
-
-            rb2d.velocity = transform.up * moveSpeed * Time.fixedDeltaTime;
-
+            isMoved = true;
             Debug.Log("key pressed");
        
         }
 
-        else if (Input.GetKey(KeyCode.S))
+        if(isMoved == true)
+        {
+            rb2d.velocity = transform.up * moveSpeed * Time.fixedDeltaTime;
+        }
+
+        if (Input.GetKey(KeyCode.S))
         {
             rb2d.velocity = Vector2.Lerp(rb2d.velocity, Vector2.zero, decelerationRate * Time.fixedDeltaTime);
+            isMoved = false;                
+
         }
 
     }
