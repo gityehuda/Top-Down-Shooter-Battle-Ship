@@ -43,7 +43,7 @@ public class EnemyMovement1 : MonoBehaviour
         if (player != null)
         {
            dist = Vector2.Distance(transform.position, player.transform.position);
-           Debug.Log("distance" + dist);
+           //Debug.Log("distance" + dist);
 
           
                       
@@ -53,7 +53,7 @@ public class EnemyMovement1 : MonoBehaviour
         if (player != null && dist <= 200f)
         {
             //  moveSpeed = 4f;
-            Debug.Log("chasing");
+           // Debug.Log("chasing");
             direction = player.position - transform.position;
             transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
            

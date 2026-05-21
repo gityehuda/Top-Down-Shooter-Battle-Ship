@@ -262,7 +262,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &216740344
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2926,7 +2926,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &857848273
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3544,23 +3544,23 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Battle Name
-
-
-    Date:
-
-    Location:
-
-    Belligerents:
-
-    Commanders:
-
-    Warships
-    Deployed:
-
-    Summary:
-
-    Historical Outcome:'
+  m_text: "Battle of Trafalgar\n\nDate: 21 October 1805\nLocation: Off Cape Trafalgar,
+    Atlantic Ocean\nBelligerents:\nCommanders: \n- British Horation Nelson (Killed
+    In Action), Cuthbert Collingwood\n- Franco-Spanish: Pierre-Charles Villeneuve
+    (France)(Surrendered), Federico Gravina (Spain)(Killed In Action)\nWarships Deployed:\nBritish:
+    \n- 27 ships of the line\n- 4 frigates\n- 1 schooner\n- 1 cutter\nFranco-Spanish:\n-
+    33 ships of the line\n- 5 frigates\n- 2 brigs\nSummary: The Battle of Trafalgar
+    was a battle which took place in 21 October 1805 off Cape Trafalgar, Atlantic
+    Ocean. It was fought by the British Royal Navy commanded by Vice-Admiral Horatio
+    Nelson against a combined French-Spanish fleet under the command of French Vice-Admiral
+    Pierre-Charles Villeneuve. Aware of the imbalance of strength between his fleet
+    against the Franco-Spanish fleet, Nelson sailed his fleet directly at the Franco-Spanish
+    battle line's flank in two columns, hoping to break the line into more manageable
+    segments. The plan worked impeccably, as Nelson\u2019s fleet split the Franco-Spanish
+    fleet into 3 segments. This, combined with the British crews\u2019 superior training,
+    lead into a decisive British victory. However, Nelson himself died before the
+    battle ended, after being shot by a French musketeer.\nHistorical Outcome: British
+    Victory"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5474,7 +5474,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1734476244
 RectTransform:
   m_ObjectHideFlags: 0

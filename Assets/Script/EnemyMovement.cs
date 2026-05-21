@@ -48,7 +48,7 @@ public class EnemyMovement : MonoBehaviour
         if (player != null)
         {
           dist = Vector2.Distance(transform.position, player.transform.position);
-            Debug.Log("distance" + dist);
+           // Debug.Log("distance" + dist);
         }
 
        // Debug.Log("current distance: " + Vector2.Distance(player.position, transform.position));
