@@ -17,13 +17,16 @@ public class AllyMovement : MonoBehaviour
     public float rotationSpeed = 40f;
     //  public float acceleration = 2f;
     private float followDistance = 2f;
-
+       
     public FleetLeader leader;
-    public Transform slot;
+   // public Transform slot;     
     public Transform fleetLeader;
+    public float fireRate;
+    private float timeToFire;
+    public Weapon[] weapons;
 
 
-    public float slotFollowStrength = 5f;
+    //public float slotFollowStrength = 5f;
     public float combatDistance = 10f;
     //public LayerMask allyLayer;
     //public LayerMask enemyLayer;
@@ -103,7 +106,7 @@ public class AllyMovement : MonoBehaviour
                 transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, angle), 5f * Time.deltaTime);
                 // Debug.Log("Distance to Stop " + distanceToStop);
                 moveSpeed = 0;
-                // Shoot();
+                Shoot();
             }
             else
             {
@@ -180,10 +183,6 @@ public class AllyMovement : MonoBehaviour
 
     void FormationMovement()
     {
-        if(slot == null)
-        {
-            return;                     
-        }
         Vector2 followPos =
          (Vector2)fleetLeader.position -
          (Vector2)fleetLeader.up * followDistance;
@@ -206,8 +205,8 @@ public class AllyMovement : MonoBehaviour
             );
 
         // Move forward
-        rb2d.velocity =
-            transform.up * moveSpeed;
+       // rb2d.velocity = transform.up * moveSpeed;
+       rb2d.MovePosition(rb2d.position + (Vector2) transform.up * moveSpeed * Time.fixedDeltaTime);    
 
     }
 
@@ -234,4 +233,22 @@ public class AllyMovement : MonoBehaviour
         Quaternion q = Quaternion.Euler(new Vector3(0, 0, angle));
         transform.localRotation = Quaternion.Slerp(transform.localRotation, q, rotationSpeed);
     }
+
+    private void Shoot()
+    {
+        if (timeToFire <= 0)
+        {
+            foreach (Weapon weapon in weapons)
+            {
+                weapon.Fire();
+            }
+            //  Debug.Log("Shooted");
+            timeToFire = fireRate;
+        }
+        else
+        {
+            timeToFire -= Time.deltaTime;
+        }
+    }
+
 }

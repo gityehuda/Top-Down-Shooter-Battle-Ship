@@ -33,6 +33,18 @@ public class FleetLeader : MonoBehaviour
                 }
             }
         }
+
+        if (column == "Weather")
+        {
+            foreach (AllyMovement allyMovement in allyMovement)
+            {
+                if (allyMovement.allyColumn == "WeatherColumn")
+                {
+                    columnAllies.Add(allyMovement.gameObject);
+                }
+            }
+        }
+
     }
 
     // Update is called once per frame
@@ -57,6 +69,19 @@ public class FleetLeader : MonoBehaviour
             }
             Debug.Log("reached point");
             return;                     
+        }
+
+        if (distance < 10f && column == "Weather")
+        {
+
+            rb2d.velocity = transform.up * moveSpeed;
+            rb2d.angularVelocity = 0f;
+            foreach (GameObject collumnallies in columnAllies)
+            {
+                collumnallies.GetComponent<AllyMovement>().combatMode = true;
+            }
+            Debug.Log("reached point");
+            return;
         }
 
         Vector2 direction = ((Vector2)targetPoint.position - rb2d.position).normalized;
