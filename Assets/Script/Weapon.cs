@@ -31,6 +31,7 @@ public class Weapon : MonoBehaviour
     {
         //GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         GameObject bullet = ObjectPooling.instance.GetInactiveObject();
+        bullet.SetActive(true);
         bullet.transform.position = firePoint.position;
         bullet.transform.rotation = firePoint.rotation;
 
