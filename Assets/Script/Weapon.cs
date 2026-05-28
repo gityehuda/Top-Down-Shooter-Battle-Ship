@@ -8,6 +8,13 @@ public class Weapon : MonoBehaviour
     public Transform firePoint;
     public float fireForce = 20f;
 
+    
+
+    private void Awake()
+    {
+        
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +29,12 @@ public class Weapon : MonoBehaviour
 
     public void Fire()
     {
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        //GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        GameObject bullet = ObjectPooling.instance.GetInactiveObject();
+        bullet.SetActive(true);
+        bullet.transform.position = firePoint.position;
+        bullet.transform.rotation = firePoint.rotation;
+
         bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.up * fireForce, ForceMode2D.Impulse);
 
     }
