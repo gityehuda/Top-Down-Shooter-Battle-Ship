@@ -15,12 +15,12 @@ public class Bullet : MonoBehaviour
     {
          if (gameObject.tag == "EnemyBullet" && collision.gameObject.tag == "Player")
        {
-            Destroy(gameObject);
+            //Destroy(gameObject);
        }
 
         if (gameObject.tag == "Bullet" && collision.gameObject.tag == "Enemy")
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     
 
@@ -35,11 +35,11 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        lifeSpan -= Time.deltaTime;     
-        if(lifeSpan <= 0 )
-        {
-            Destroy(gameObject);               
-        }   
+        //lifeSpan -= Time.deltaTime;     
+        //if(lifeSpan <= 0 )
+        //{
+        //    Destroy(gameObject);               
+        //}   
 
     }
 }

@@ -241,9 +241,11 @@ public class AllyMovement : MonoBehaviour
             foreach (Weapon weapon in weapons)
             {
                 weapon.Fire();
+                timeToFire = fireRate;
+                 Debug.Log("Shooted");
             }
-            //  Debug.Log("Shooted");
-            timeToFire = fireRate;
+           
+          
         }
         else
         {
