@@ -19,19 +19,13 @@ public class Bullet : MonoBehaviour
          if (gameObject.tag == "EnemyBullet" && collision.gameObject.tag == "Player")
        {
             //Destroy(gameObject);
-<<<<<<< Updated upstream
-=======
             DeactivateBullet();
->>>>>>> Stashed changes
        }
 
         if (gameObject.tag == "Bullet" && collision.gameObject.tag == "Enemy")
         {
             //Destroy(gameObject);
-<<<<<<< Updated upstream
-=======
             DeactivateBullet();      
->>>>>>> Stashed changes
         }
     
 
@@ -46,13 +40,6 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-<<<<<<< Updated upstream
-        //lifeSpan -= Time.deltaTime;     
-        //if(lifeSpan <= 0 )
-        //{
-        //    Destroy(gameObject);               
-        //}   
-=======
         lifeSpan -= Time.deltaTime;
         if (lifeSpan <= 0)
         {
@@ -60,7 +47,6 @@ public class Bullet : MonoBehaviour
             lifeSpan = lifeSpanDefault;
         }
 
->>>>>>> Stashed changes
 
     }
 
