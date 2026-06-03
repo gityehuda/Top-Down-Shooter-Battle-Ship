@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public GameObject player;
+    public bool isPaused;
     private float playerHealth;
     public GameObject gameoverScreen;
     // Start is called before the first frame update
@@ -33,16 +34,19 @@ public class GameManager : MonoBehaviour
         {
             GameOver();
         }
+
     }
 
     public void PauseGame()
     {
         Time.timeScale = 0f;
+        isPaused = true;    
     }
 
     public void ResumeGame()
     {
-        Time.timeScale = 1f;                
+        Time.timeScale = 1f;             
+        isPaused = false;   
     }
 
     public void GameOver()
@@ -50,5 +54,9 @@ public class GameManager : MonoBehaviour
         gameoverScreen.SetActive(true);    
     }
 
+    public void PauseCheck()
+    {
+        
+    }
 
 }

@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public float decelerationRate;
     private float rotationInput;
     private float moveInput;
+    [SerializeField] private GameManager gameManager;    
 
     Vector2 moveDirection;
     Vector2 mousePosition;
@@ -64,7 +65,7 @@ public class PlayerController : MonoBehaviour
 
         if(isMoved == true)
         {
-            rb2d.velocity = transform.up * moveSpeed * Time.fixedDeltaTime;
+            rb2d.velocity = transform.up * moveSpeed;
         }
 
         if (Input.GetKey(KeyCode.S))
@@ -80,10 +81,17 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && timer <= 0)
         {
-           foreach(Weapon weapon in weapons)
+            if (gameManager.isPaused == true)
             {
-                weapon.Fire();
-                timer = fireRate;
+                return;
+            }
+            else
+            {
+                foreach (Weapon weapon in weapons)
+                {
+                    weapon.Fire();
+                    timer = fireRate;
+                }
             }
         }
         else
