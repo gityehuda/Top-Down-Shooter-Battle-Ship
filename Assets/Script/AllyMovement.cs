@@ -90,31 +90,35 @@ public class AllyMovement : MonoBehaviour
         //    );
 
         //rb2d.velocity = transform.up * moveSpeed;
+        Debug.Log("distance: " + Vector2.Distance(currentEnemy.position, transform.position));
         if(combat == false)
         {
             rb2d.velocity = Vector2.zero;
             combat = true;
         }
+        
         else
         {
-            direction = currentEnemy.position - transform.position;
-            transform.position = Vector2.MoveTowards(transform.position, currentEnemy.position, moveSpeed * Time.deltaTime);
-
-            if (Vector2.Distance(currentEnemy.position, transform.position) <= distanceToStop)
+            if (currentEnemy != null)
             {
-                float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-                transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, angle), 5f * Time.deltaTime);
-                // Debug.Log("Distance to Stop " + distanceToStop);
-                moveSpeed = 0;
-                Shoot();
-            }
-            else
-            {
+                direction = currentEnemy.position - transform.position;
+                transform.position = Vector2.MoveTowards(transform.position, currentEnemy.position, moveSpeed * Time.deltaTime);
 
-                moveSpeed = 100f;
-                RotateTowardTarget();
-            }
+                if (Vector2.Distance(currentEnemy.position, transform.position) <= distanceToStop)
+                {
+                    float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+                    transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, angle), 5f * Time.deltaTime);
+                    // Debug.Log("Distance to Stop " + distanceToStop);
+                    moveSpeed = 0;
+                    Shoot();
+                }
+                else
+                {
 
+                    moveSpeed = 100f;
+                    RotateTowardTarget();
+                }
+            }     
         }
      
        
@@ -183,7 +187,7 @@ public class AllyMovement : MonoBehaviour
 
     void FormationMovement()
     {
-        Vector2 followPos =
+        Vector2 followPos =     
          (Vector2)fleetLeader.position -
          (Vector2)fleetLeader.up * followDistance;
 

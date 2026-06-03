@@ -55,7 +55,7 @@ public class FleetLeader : MonoBehaviour
             return; 
         }
         float distance = Vector2.Distance(transform.position, targetPoint.position);        
-          Debug.Log("distance: " + distance);          
+          //Debug.Log("distance: " + distance);          
 
 
         if(distance < 10f && column == "Lee")
@@ -67,7 +67,7 @@ public class FleetLeader : MonoBehaviour
             {
                 collumnallies.GetComponent<AllyMovement>().combatMode = true;
             }
-            Debug.Log("reached point");
+          //  Debug.Log("reached point");
             return;                     
         }
 
