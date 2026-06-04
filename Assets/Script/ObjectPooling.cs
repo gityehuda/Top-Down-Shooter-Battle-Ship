@@ -2,54 +2,87 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Pool;
 
 public class ObjectPooling : MonoBehaviour
 {
     public static ObjectPooling instance;
+    
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private int poolSize;
-
-    [SerializeField] private List<GameObject> pool = new List<GameObject>();
-
+    // [SerializeField] private List<GameObject> pool = new List<GameObject>();
+    public ObjectPool<GameObject> pool;
+    
     private void Awake()
     {
         instance = this;
 
-        pool = GeneratePool();
-        HideAllPoolObjects();
+        // pool = GeneratePool();
+        pool = new ObjectPool<GameObject>(
+            () => CreateObject()
+            , ActionOnGet
+            , ActionOnRelease
+            , ActionOnDestroy
+            , true, poolSize, poolSize * 10
+            );
+        
+        Populate();
     }
 
-    private void HideAllPoolObjects()
+    private GameObject CreateObject()
     {
-        foreach (GameObject obj in pool)
-        {
-            obj.SetActive(false);
-        }
+        return Instantiate(bulletPrefab, transform);
     }
 
-    private List<GameObject> GeneratePool()
+    private void ActionOnDestroy(GameObject obj)
     {
-        List<GameObject> pool = new List<GameObject>();
+        Destroy(obj);
+    }
 
+    private void ActionOnRelease(GameObject obj)
+    {
+        obj.SetActive(false);
+    }
+
+    private void ActionOnGet(GameObject obj)
+    {
+        obj.SetActive(true);
+    }
+
+    private void Populate()
+    {
+        var temp = new GameObject[poolSize];
+        
         for (int i = 0; i < poolSize; i++)
         {
-            pool.Add(Instantiate(bulletPrefab, transform));
+            temp[i] = GetObject();
         }
-
-        return pool;
+        
+        for (int i = 0; i < poolSize; i++)
+        {
+            Release(temp[i]);
+        }
+    }
+    
+    public void Release(GameObject obj)
+    {
+        pool.Release(obj);
+    }
+    
+    /// <summary>
+    /// 1. cek jika di pool ada object yang ready (non-aktif)
+    /// 2. kalau ada yang ready -> return object yang ready  tersebut
+    /// 3. kalau tidak ada yang ready -> create object baru menggunakan function CreateObject
+    /// </summary>
+    /// <returns></returns>
+    internal GameObject GetObject()
+    {
+        return pool.Get();
     }
 
-    internal GameObject GetInactiveObject()
+    internal T GetObject<T>()
     {
-        foreach(GameObject obj in pool)
-        {
-            if (!obj.activeInHierarchy)
-            {
-                return obj;
-            }
-        }
-        Debug.Log("No pooled object is available right now! Consider expanding the pool size", this);
-        return null;
+        return pool.Get().GetComponent<T>();
     }
 }
     
