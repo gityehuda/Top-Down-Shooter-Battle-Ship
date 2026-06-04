@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,13 +6,37 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float lifeSpanDefault = 1f;
+    // public ObjectPooling pool;
+    
     private float lifeSpan;
-    [SerializeField]private ObjectPooling pool;
-    private GameObject[] bullets;
-    private void OnCollisionEnter2D(Collision2D collision)
+    private Rigidbody2D _rigidbody2D;
+    // private GameObject[] bullets;
+
+    private void Awake()
     {
-      
-      
+        _rigidbody2D = GetComponent<Rigidbody2D>();
+    }
+    
+    void Start()
+    {
+        lifeSpan = lifeSpanDefault;
+    }
+
+    void Update()
+    {
+        lifeSpan -= Time.deltaTime;
+
+        if (!(lifeSpan <= 0)) return;
+        
+        DeactivateBullet();
+        Reset();
+    }
+
+    private void Reset()
+    {
+        lifeSpan = lifeSpanDefault;
+        transform.position = Vector3.zero;
+        transform.rotation = Quaternion.identity;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -27,32 +52,13 @@ public class Bullet : MonoBehaviour
             //Destroy(gameObject);
             DeactivateBullet();      
         }
-    
-
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        lifeSpan = lifeSpanDefault;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        lifeSpan -= Time.deltaTime;
-        if (lifeSpan <= 0)
-        {
-            DeactivateBullet();
-            lifeSpan = lifeSpanDefault;
-        }
-
-
-    }
 
     private void DeactivateBullet()
     {
-        StartCoroutine(ReturnToPool()); 
+        ObjectPooling.instance.Release(gameObject);
+        // StartCoroutine(ReturnToPool()); 
     }
 
     IEnumerator ReturnToPool()
@@ -63,4 +69,18 @@ public class Bullet : MonoBehaviour
       
     }
 
+    public void SetRotation(Quaternion rotation)
+    {
+        transform.rotation = rotation;
+    }
+
+    public void SetPosition(Vector3 position)
+    {
+        transform.position =  position;
+    }
+
+    public void AddForce(Vector3 velocity)
+    {
+        _rigidbody2D.AddForce(velocity, ForceMode2D.Impulse);
+    }
 }

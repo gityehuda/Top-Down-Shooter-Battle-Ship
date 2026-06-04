@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -41,7 +42,12 @@ public class AllyMovement : MonoBehaviour
 
     [SerializeField] private Transform currentEnemy;
 
-    public bool combatMode = false;            
+    public bool combatMode = false;
+
+    private void Awake()
+    {
+        weapons = GetComponentsInChildren<Weapon>();
+    }
 
     void Start()
     {
@@ -60,7 +66,7 @@ public class AllyMovement : MonoBehaviour
         }
         else
         {
-            FormationMovement();
+            // FormationMovement();
         }
 
     }
@@ -90,17 +96,18 @@ public class AllyMovement : MonoBehaviour
         //    );
 
         //rb2d.velocity = transform.up * moveSpeed;
-        Debug.Log("distance: " + Vector2.Distance(currentEnemy.position, transform.position));
+        
+        
         if(combat == false)
         {
             rb2d.velocity = Vector2.zero;
             combat = true;
         }
-        
         else
         {
             if (currentEnemy != null)
             {
+                Debug.Log("distance: " + Vector2.Distance(currentEnemy.position, transform.position));
                 direction = currentEnemy.position - transform.position;
                 transform.position = Vector2.MoveTowards(transform.position, currentEnemy.position, moveSpeed * Time.deltaTime);
 
@@ -187,9 +194,9 @@ public class AllyMovement : MonoBehaviour
 
     void FormationMovement()
     {
-        Vector2 followPos =     
-         (Vector2)fleetLeader.position -
-         (Vector2)fleetLeader.up * followDistance;
+        if (fleetLeader is null) return;
+        
+        Vector2 followPos = (Vector2)fleetLeader.position - (Vector2)fleetLeader.up * followDistance;
 
         // Direction to follow position
         Vector2 dir = followPos - (Vector2)transform.position;

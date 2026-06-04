@@ -2,54 +2,76 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Pool;
 
 public class ObjectPooling : MonoBehaviour
 {
     public static ObjectPooling instance;
+    
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private int poolSize;
-
-    [SerializeField] private List<GameObject> pool = new List<GameObject>();
-
+    // [SerializeField] private List<GameObject> pool = new List<GameObject>();
+    public ObjectPool<GameObject> pool;
+    
     private void Awake()
     {
         instance = this;
 
-        pool = GeneratePool();
-        HideAllPoolObjects();
+        // pool = GeneratePool();
+        pool = new ObjectPool<GameObject>(
+            () => Instantiate(bulletPrefab, transform)
+            , ActionOnGet
+            , ActionOnRelease
+            , ActionOnDestroy
+            , true, poolSize, poolSize * 10
+            );
+        
+        Populate();
     }
 
-    private void HideAllPoolObjects()
+    private void ActionOnDestroy(GameObject obj)
     {
-        foreach (GameObject obj in pool)
-        {
-            obj.SetActive(false);
-        }
+        Destroy(obj);
     }
 
-    private List<GameObject> GeneratePool()
+    private void ActionOnRelease(GameObject obj)
     {
-        List<GameObject> pool = new List<GameObject>();
+        obj.SetActive(false);
+    }
 
+    private void ActionOnGet(GameObject obj)
+    {
+        obj.SetActive(true);
+    }
+
+    private void Populate()
+    {
+        var temp = new GameObject[poolSize];
+        
         for (int i = 0; i < poolSize; i++)
         {
-            pool.Add(Instantiate(bulletPrefab, transform));
+            temp[i] =  pool.Get();    
         }
-
-        return pool;
+        
+        for (int i = 0; i < poolSize; i++)
+        {
+            pool.Release(temp[i]);    
+        }
     }
 
-    internal GameObject GetInactiveObject()
+    public void Release(GameObject obj)
     {
-        foreach(GameObject obj in pool)
-        {
-            if (!obj.activeInHierarchy)
-            {
-                return obj;
-            }
-        }
-        Debug.Log("No pooled object is available right now! Consider expanding the pool size", this);
-        return null;
+        pool.Release(obj);
+    }
+        
+    internal GameObject GetObject()
+    {
+        return pool.Get();
+    }
+
+    internal T GetObject<T>()
+    {
+        return pool.Get().GetComponent<T>();
     }
 }
     
