@@ -19,7 +19,7 @@ public class ObjectPooling : MonoBehaviour
 
         // pool = GeneratePool();
         pool = new ObjectPool<GameObject>(
-            () => Instantiate(bulletPrefab, transform)
+            () => CreateObject()
             , ActionOnGet
             , ActionOnRelease
             , ActionOnDestroy
@@ -27,6 +27,11 @@ public class ObjectPooling : MonoBehaviour
             );
         
         Populate();
+    }
+
+    private GameObject CreateObject()
+    {
+        return Instantiate(bulletPrefab, transform);
     }
 
     private void ActionOnDestroy(GameObject obj)
@@ -50,20 +55,26 @@ public class ObjectPooling : MonoBehaviour
         
         for (int i = 0; i < poolSize; i++)
         {
-            temp[i] =  pool.Get();    
+            temp[i] = GetObject();
         }
         
         for (int i = 0; i < poolSize; i++)
         {
-            pool.Release(temp[i]);    
+            Release(temp[i]);
         }
     }
-
+    
     public void Release(GameObject obj)
     {
         pool.Release(obj);
     }
-        
+    
+    /// <summary>
+    /// 1. cek jika di pool ada object yang ready (non-aktif)
+    /// 2. kalau ada yang ready -> return object yang ready  tersebut
+    /// 3. kalau tidak ada yang ready -> create object baru menggunakan function CreateObject
+    /// </summary>
+    /// <returns></returns>
     internal GameObject GetObject()
     {
         return pool.Get();
