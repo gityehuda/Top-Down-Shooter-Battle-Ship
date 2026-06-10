@@ -9,9 +9,11 @@ public class ObjectPooling : MonoBehaviour
     public static ObjectPooling instance;
     
     [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private GameObject enemyBulletPrefab;
     [SerializeField] private int poolSize;
     // [SerializeField] private List<GameObject> pool = new List<GameObject>();
     public ObjectPool<GameObject> pool;
+    public ObjectPool<GameObject> enemyPool;
     
     private void Awake()
     {
@@ -25,13 +27,24 @@ public class ObjectPooling : MonoBehaviour
             , ActionOnDestroy
             , true, poolSize, poolSize * 10
             );
-        
+        //enemyPool = new ObjectPool<GameObject>(
+        //    () => CreateBulletEnemyObject()
+        //    , ActionOnGet
+        //    , ActionOnRelease
+        //    , ActionOnDestroy
+        //    , true, poolSize, poolSize * 10);
+
         Populate();
     }
 
     private GameObject CreateObject()
     {
         return Instantiate(bulletPrefab, transform);
+    }
+
+    private GameObject CreateBulletEnemyObject()
+    {
+        return Instantiate(enemyBulletPrefab, transform);                   
     }
 
     private void ActionOnDestroy(GameObject obj)
@@ -52,15 +65,18 @@ public class ObjectPooling : MonoBehaviour
     private void Populate()
     {
         var temp = new GameObject[poolSize];
+        var enemyTemp = new GameObject[poolSize];   
         
         for (int i = 0; i < poolSize; i++)
         {
             temp[i] = GetObject();
+           // enemyTemp[i] = GetObject();         
         }
         
         for (int i = 0; i < poolSize; i++)
         {
             Release(temp[i]);
+          //  Release(enemyTemp[i]);       
         }
     }
     
@@ -80,9 +96,20 @@ public class ObjectPooling : MonoBehaviour
         return pool.Get();
     }
 
+    //internal GameObject GetEnemyObject()
+    //{
+    //    return enemyPool.Get(); 
+    //}
+
     internal T GetObject<T>()
     {
         return pool.Get().GetComponent<T>();
     }
+
+    //internal T GetEnemyObject<T>()
+    //{
+    //    return enemyPool.Get().GetComponent<T>();                            
+    //}
+
 }
     

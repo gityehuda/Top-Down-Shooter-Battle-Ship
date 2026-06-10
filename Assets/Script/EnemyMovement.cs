@@ -18,7 +18,7 @@ public class EnemyMovement : MonoBehaviour
     public Weapon[] weapons;
     [SerializeField] private Detection detector;
     //private Rigidbody2D rb2d;
-   // private Moveable mymoveable;
+   // private Moveable mymoveable;      
 
     public float distanceToFire = 5f;
     public float distanceToStop = 10f;
@@ -28,7 +28,10 @@ public class EnemyMovement : MonoBehaviour
     //  public GameObject bulletPrefab; 
     public float rotationSpeed = 0.1f;
     private float sideDistance = 5f;
+    private float detectionRadius = 70f;
+    public LayerMask allyLayer;
     float side = 1f;
+    public Transform currentAllyOrPlayer;
     private Quaternion previousRotation;
     // Start is called before the first frame update
     void Start()
@@ -52,19 +55,21 @@ public class EnemyMovement : MonoBehaviour
         }
 
        // Debug.Log("current distance: " + Vector2.Distance(player.position, transform.position));
-        if(detector.isDetected == true)
+        if(currentAllyOrPlayer != null)
         {
+            float distanceToAlly = Vector2.Distance(currentAllyOrPlayer.position, transform.position);
+            Debug.Log("distance to ally: " + distanceToAlly);
             //  moveSpeed = 4f;
-            direction = detector.detectedObject.transform.position - transform.position;
-            transform.position = Vector2.MoveTowards(transform.position, detector.detectedObject.transform.position, moveSpeed * Time.deltaTime);
+            direction = currentAllyOrPlayer.position - transform.position;
+            transform.position = Vector2.MoveTowards(transform.position, currentAllyOrPlayer.position, moveSpeed * Time.deltaTime);
 
-            if (Vector2.Distance(detector.detectedObject.transform.position, transform.position) <= distanceToStop)
+            if (Vector2.Distance(currentAllyOrPlayer.position, transform.position) <= distanceToStop)
             {
                 float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
                 transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, angle), rotationSpeed * Time.deltaTime);       
                 // Debug.Log("Distance to Stop " + distanceToStop);
                 moveSpeed = 0;
-                Shoot();
+              //  Shoot();       
             }
             else
             {
@@ -73,6 +78,10 @@ public class EnemyMovement : MonoBehaviour
                 RotateTowardTarget();
             }
            
+        }
+        else
+        {
+            currentAllyOrPlayer = FindNearbyEnemy();    
         }
       
       
@@ -111,7 +120,7 @@ public class EnemyMovement : MonoBehaviour
 
     private void RotateTowardTarget()      
     {
-        Vector2 targetDirection = detector.detectedObject.transform.position - transform.position; 
+        Vector2 targetDirection = currentAllyOrPlayer.position - transform.position; 
         float angle = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg - 90f;
         Quaternion q = Quaternion.Euler(new Vector3(0, 0, angle));
         transform.localRotation = Quaternion.Slerp(transform.localRotation, q, rotationSpeed * Time.deltaTime);
@@ -122,6 +131,33 @@ public class EnemyMovement : MonoBehaviour
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             Quaternion targetRotation = Quaternion.Euler(0, 0, angle);
             transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+    }
+
+    private Transform FindNearbyEnemy()
+    {
+        Collider2D[] enemies = Physics2D.OverlapCircleAll(transform.position, detectionRadius);
+        float closestDistance = Mathf.Infinity;
+        Transform closestEnemy = null;
+
+        foreach (Collider2D enemy in enemies)
+        {
+            //Debug.Log("Ally: " + enemy);          
+            if (enemy.tag == "Player" || enemy.tag == "Ally")
+            {
+                float distance = Vector2.Distance(transform.position, enemy.transform.position);
+
+                if (distance < closestDistance)
+                {
+                    closestDistance = distance;
+                    closestEnemy = enemy.transform;
+                }
+            
+            }
+
+          
+        }
+
+        return closestEnemy;
     }
 
 }

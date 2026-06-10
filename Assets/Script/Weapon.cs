@@ -32,11 +32,22 @@ public class Weapon : MonoBehaviour
         //GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         // GameObject bulletObject = ObjectPooling.instance.GetObject();
         Bullet bullet = ObjectPooling.instance.GetObject<Bullet>();
+       // Bullet enemyBullet = ObjectPooling.instance.GetObject<Bullet>();    
 
         bullet.SetPosition(firePoint.position);
         bullet.SetRotation(firePoint.rotation);
         bullet.AddForce(firePoint.up * fireForce);
-        
+
+
+        //if (transform.parent.tag == "Enemy")
+        //{
+        //    enemyBullet.SetPosition(firePoint.position);
+        //    enemyBullet.SetRotation(firePoint.rotation);
+        //    enemyBullet.AddForce(firePoint.forward * fireForce);
+
+        //}
+
+
         // bullet.transform.position = firePoint.position;
         // bullet.transform.rotation = firePoint.rotation;
 

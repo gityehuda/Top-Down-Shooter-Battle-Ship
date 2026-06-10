@@ -30,7 +30,7 @@ public class AllyMovement : MonoBehaviour
     //public float slotFollowStrength = 5f;
     public float combatDistance = 10f;
     //public LayerMask allyLayer;
-    //public LayerMask enemyLayer;
+    public LayerMask enemyLayer;
 
     [Header("Avoidance")]
     public float separationRadius = 2f;
@@ -41,6 +41,7 @@ public class AllyMovement : MonoBehaviour
     private ShipState currentState;
 
     [SerializeField] private Transform currentEnemy;
+    private float detectionRadius = 120f;                   
 
     public bool combatMode = false;
 
@@ -66,13 +67,13 @@ public class AllyMovement : MonoBehaviour
         }
         else
         {
-            // FormationMovement();
+           // FormationMovement();
         }
-
+        CombatMovement();
     }
 
     Vector2 direction;
-    bool combat = false;
+    //bool combat = false;
     void CombatMovement()
     {
         //if (currentEnemy == null)
@@ -98,13 +99,14 @@ public class AllyMovement : MonoBehaviour
         //rb2d.velocity = transform.up * moveSpeed;
         
         
-        if(combat == false)
-        {
-            rb2d.velocity = Vector2.zero;
-            combat = true;
-        }
-        else
-        {
+        //if(combatMode == false)
+        //{
+        //    rb2d.velocity = Vector2.zero;
+        //    combatMode = true;
+        //}
+        //else
+        //{
+            
             if (currentEnemy != null)
             {
                 Debug.Log("distance: " + Vector2.Distance(currentEnemy.position, transform.position));
@@ -125,8 +127,12 @@ public class AllyMovement : MonoBehaviour
                     moveSpeed = 100f;
                     RotateTowardTarget();
                 }
-            }     
-        }
+            }
+            else
+            {
+               currentEnemy = FindNearbyEnemy();              
+            }
+       // }
      
        
 
@@ -243,6 +249,31 @@ public class AllyMovement : MonoBehaviour
         float angle = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg - 90f;
         Quaternion q = Quaternion.Euler(new Vector3(0, 0, angle));
         transform.localRotation = Quaternion.Slerp(transform.localRotation, q, rotationSpeed);
+    }
+
+    private Transform FindNearbyEnemy()
+    {
+        Collider2D[] enemies = Physics2D.OverlapCircleAll(transform.position, detectionRadius);
+        float closestDistance = Mathf.Infinity;
+        Transform closestEnemy = null;
+
+        foreach(Collider2D enemy in enemies)
+        {
+            if (enemy.tag == "Enemy")
+            {
+                float distance = Vector2.Distance(transform.position, enemy.transform.position);
+
+                if (distance < closestDistance)
+                {
+                    closestDistance = distance;
+                    closestEnemy = enemy.transform;
+                }
+            
+            }
+         
+        }
+
+        return closestEnemy;          
     }
 
     private void Shoot()
