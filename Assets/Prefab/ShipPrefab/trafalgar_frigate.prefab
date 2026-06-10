@@ -3378,6 +3378,7 @@ GameObject:
   - component: {fileID: 972797069924757695}
   - component: {fileID: 6551073499900249219}
   - component: {fileID: 1622615338975123562}
+  - component: {fileID: 538621045891587694}
   m_Layer: 0
   m_Name: trafalgar_frigate
   m_TagString: Untagged
@@ -3568,11 +3569,31 @@ MonoBehaviour:
   - {fileID: 212408039886606106}
   - {fileID: 3307983277090049021}
   - {fileID: 8376170025492286096}
+  detector: {fileID: 0}
   distanceToFire: 5
   distanceToStop: 10
   firingPoint: {fileID: 0}
   fireRate: 1
   rotationSpeed: 0.1
+  allyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  currentAllyOrPlayer: {fileID: 0}
+--- !u!114 &538621045891587694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4739835508038344125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 315af1f09445ff64bbbe64a758cfe7df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxhealth: 10
+  healthImage: {fileID: 0}
+  currentHealth: 0
 --- !u!1 &4819929502731629587
 GameObject:
   m_ObjectHideFlags: 0

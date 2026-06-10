@@ -8524,6 +8524,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4367092755516653219}
   - component: {fileID: 5433490578150492584}
+  - component: {fileID: 1254545548346570913}
+  - component: {fileID: 686193692037099879}
   m_Layer: 0
   m_Name: trafalgar_two_decker
   m_TagString: Untagged
@@ -8662,6 +8664,49 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1254545548346570913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8530526756004925488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58c576e0a3b74b64cab123b7c60200b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allyColumn: 
+  moveSpeed: 100
+  rotationSpeed: 40
+  leader: {fileID: 0}
+  fleetLeader: {fileID: 0}
+  fireRate: 0
+  weapons: []
+  combatDistance: 10
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  separationRadius: 2
+  separationForce: 3
+  distanceToStop: 40
+  currentEnemy: {fileID: 0}
+  combatMode: 0
+--- !u!114 &686193692037099879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8530526756004925488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 315af1f09445ff64bbbe64a758cfe7df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxhealth: 125
+  healthImage: {fileID: 0}
+  currentHealth: 125
 --- !u!1 &8545158717094159767
 GameObject:
   m_ObjectHideFlags: 0

@@ -760,8 +760,9 @@ GameObject:
   - component: {fileID: 1754169010158832131}
   - component: {fileID: 263521562901847905}
   - component: {fileID: 4868646491483420243}
+  - component: {fileID: -7747179151092607727}
   m_Layer: 0
-  m_Name: trafalgar_frigate_spain
+  m_Name: trafalgar_frigate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -868,7 +869,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: b4363d2a3d801304f95268c7344eba46, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 39ef7040880ecf24db2fc59e75384d43, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -900,7 +901,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 790489555872606786}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 057a17bcd61d9484897d48e1ce3a05c1, type: 3}
   m_Name: 
@@ -951,11 +952,16 @@ MonoBehaviour:
   - {fileID: 6009854967030841984}
   - {fileID: 8873106084362590505}
   - {fileID: 2654930658570811988}
+  detector: {fileID: 0}
   distanceToFire: 30
   distanceToStop: 30
   firingPoint: {fileID: 0}
   fireRate: 1
   rotationSpeed: 1
+  allyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  currentAllyOrPlayer: {fileID: 0}
 --- !u!60 &263521562901847905
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1060,7 +1066,79 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxhealth: 90
   healthImage: {fileID: 8476784548564835751}
-  currentHealth: 0
+  currentHealth: 90
+--- !u!114 &-7747179151092607727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790489555872606786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58c576e0a3b74b64cab123b7c60200b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allyColumn: 
+  moveSpeed: 100
+  rotationSpeed: 40
+  leader: {fileID: 0}
+  fleetLeader: {fileID: 0}
+  fireRate: 0
+  weapons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  combatDistance: 10
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  separationRadius: 2
+  separationForce: 3
+  distanceToStop: 40
+  currentEnemy: {fileID: 0}
+  combatMode: 0
 --- !u!1 &850842457411579044
 GameObject:
   m_ObjectHideFlags: 0

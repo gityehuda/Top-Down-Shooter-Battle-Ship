@@ -1183,6 +1183,10 @@ MonoBehaviour:
   firingPoint: {fileID: 0}
   fireRate: 1
   rotationSpeed: 1
+  allyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  currentAllyOrPlayer: {fileID: 0}
 --- !u!60 &4879688185225689703
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1279,9 +1283,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 315af1f09445ff64bbbe64a758cfe7df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxhealth: 100
+  maxhealth: 65
   healthImage: {fileID: 536074576221274490}
-  currentHealth: 0
+  currentHealth: 65
 --- !u!1 &3911768926934071538
 GameObject:
   m_ObjectHideFlags: 0

@@ -1743,6 +1743,7 @@ GameObject:
   - component: {fileID: 492553703453802892}
   - component: {fileID: 8523566709080460451}
   - component: {fileID: 3701346621060170338}
+  - component: {fileID: 8377225042131188020}
   m_Layer: 0
   m_Name: trafalgar_single_decker
   m_TagString: Untagged
@@ -1846,7 +1847,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  rb2d: {fileID: 8523566709080460451}
   weapons:
   - {fileID: 8641591107649212394}
   - {fileID: 3619003723696120409}
@@ -1867,6 +1867,8 @@ MonoBehaviour:
   health: 10
   fireRate: 1
   turningSpeed: 0.1
+  decelerationRate: 0
+  gameManager: {fileID: 0}
 --- !u!50 &8523566709080460451
 Rigidbody2D:
   serializedVersion: 4
@@ -1979,6 +1981,21 @@ PolygonCollider2D:
       - {x: 0.21, y: -0.84}
       - {x: 0.26999998, y: -0.55}
   m_UseDelaunayMesh: 0
+--- !u!114 &8377225042131188020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5099447935184858446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 315af1f09445ff64bbbe64a758cfe7df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxhealth: 65
+  healthImage: {fileID: 0}
+  currentHealth: 65
 --- !u!1 &5707815044761398112
 GameObject:
   m_ObjectHideFlags: 0

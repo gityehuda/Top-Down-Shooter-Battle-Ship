@@ -365,6 +365,8 @@ GameObject:
   - component: {fileID: 6885245771209629383}
   - component: {fileID: 4583655280877620862}
   - component: {fileID: 6935846261854321220}
+  - component: {fileID: 7151076997264961888}
+  - component: {fileID: 5130822124097276081}
   m_Layer: 0
   m_Name: Trafalgar cutter 1
   m_TagString: Player
@@ -462,7 +464,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 700
-  rb2d: {fileID: 6935846261854321220}
   weapons:
   - {fileID: 5291921615889416816}
   - {fileID: 4818191358125539302}
@@ -477,6 +478,8 @@ MonoBehaviour:
   health: 10
   fireRate: 1
   turningSpeed: 0.1
+  decelerationRate: 0
+  gameManager: {fileID: 0}
 --- !u!60 &4583655280877620862
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -582,6 +585,59 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7151076997264961888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034019814652488232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58c576e0a3b74b64cab123b7c60200b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allyColumn: 
+  moveSpeed: 100
+  rotationSpeed: 40
+  leader: {fileID: 0}
+  fleetLeader: {fileID: 0}
+  fireRate: 0
+  weapons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  combatDistance: 10
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  separationRadius: 2
+  separationForce: 3
+  distanceToStop: 40
+  currentEnemy: {fileID: 0}
+  combatMode: 0
+--- !u!114 &5130822124097276081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034019814652488232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 315af1f09445ff64bbbe64a758cfe7df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxhealth: 55
+  healthImage: {fileID: 0}
+  currentHealth: 55
 --- !u!1 &2486797587472289563
 GameObject:
   m_ObjectHideFlags: 0

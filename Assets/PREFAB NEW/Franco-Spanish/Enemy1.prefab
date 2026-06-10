@@ -6264,9 +6264,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 315af1f09445ff64bbbe64a758cfe7df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxhealth: 100
+  maxhealth: 90
   healthImage: {fileID: 4249308825627130212}
-  currentHealth: 0
+  currentHealth: 90
 --- !u!58 &1520944315746044523
 CircleCollider2D:
   m_ObjectHideFlags: 0
