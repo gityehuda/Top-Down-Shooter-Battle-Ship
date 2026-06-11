@@ -69,7 +69,7 @@ public class EnemyMovement : MonoBehaviour
                 transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, angle), rotationSpeed * Time.deltaTime);       
                 // Debug.Log("Distance to Stop " + distanceToStop);
                 moveSpeed = 0;
-              //  Shoot();       
+                Shoot();                                                   
             }
             else
             {
@@ -107,7 +107,7 @@ public class EnemyMovement : MonoBehaviour
         {
             foreach(Weapon weapon in weapons)
             {
-                weapon.Fire();
+                weapon.FireEnemyBullet();
             }                                           
           //  Debug.Log("Shooted");
             timeToFire = fireRate;

@@ -28,7 +28,11 @@ public class Bullet : MonoBehaviour
 
         if (!(lifeSpan <= 0)) return;
         
-        DeactivateBullet();
+        if(gameObject.tag == "Bullet")
+        {
+            DeactivateBullet();
+        }
+      
         Reset();
     }
 
@@ -43,8 +47,8 @@ public class Bullet : MonoBehaviour
     {
          if (gameObject.tag == "EnemyBullet" && collision.gameObject.tag == "Player")
        {
-            //Destroy(gameObject);
-            DeactivateBullet();
+            Destroy(gameObject);
+            //DeactivateBullet();
        }
 
         if (gameObject.tag == "Bullet" && collision.gameObject.tag == "Enemy")

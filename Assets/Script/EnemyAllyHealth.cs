@@ -23,13 +23,14 @@ public class EnemyAllyHealth : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bullet" && gameObject.tag == "Enemy")
         {
-            currentHealth--;
+            currentHealth--;             
             Debug.Log("enemy hit");
         }
-        if(collision.gameObject.tag == "EnemyBullet" && gameObject.tag == "Player")
+        if(collision.gameObject.tag == "EnemyBullet" && (gameObject.tag == "Player" || gameObject.tag == "Ally"))
         {
             currentHealth--;
         }
+
     }
 
     void Update()

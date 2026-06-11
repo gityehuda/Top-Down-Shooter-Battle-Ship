@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+    public string WeaponID;
     public GameObject bulletPrefab;
     public Transform firePoint;
     public float fireForce = 20f;
-
+   // public GameObject enemyBullet;
     
 
     private void Awake()
@@ -31,12 +32,16 @@ public class Weapon : MonoBehaviour
     {
         //GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         // GameObject bulletObject = ObjectPooling.instance.GetObject();
-        Bullet bullet = ObjectPooling.instance.GetObject<Bullet>();
+        
+            Bullet bullet = ObjectPooling.instance.GetObject<Bullet>();
 
-        bullet.SetPosition(firePoint.position);
-        bullet.SetRotation(firePoint.rotation);
-        bullet.AddForce(firePoint.up * fireForce);
+            bullet.SetPosition(firePoint.position);
+            bullet.SetRotation(firePoint.rotation);
+            bullet.AddForce(firePoint.up * fireForce);
+      
 
+       
+               
 
         // bullet.transform.position = firePoint.position;
         // bullet.transform.rotation = firePoint.rotation;
@@ -44,4 +49,12 @@ public class Weapon : MonoBehaviour
         // bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.up * fireForce, ForceMode2D.Impulse);
 
     }
+
+    public void FireEnemyBullet()
+    {
+
+            GameObject enemyBullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            enemyBullet.GetComponent<Rigidbody2D>().AddForce(firePoint.up * fireForce, ForceMode2D.Impulse);
+    }
+
 }

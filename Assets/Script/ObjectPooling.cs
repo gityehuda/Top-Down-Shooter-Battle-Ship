@@ -9,11 +9,11 @@ public class ObjectPooling : MonoBehaviour
     public static ObjectPooling instance;
     
     [SerializeField] private GameObject bulletPrefab;
-    [SerializeField] private GameObject enemyBulletPrefab;
+   // [SerializeField] private GameObject enemyBulletPrefab;
     [SerializeField] private int poolSize;
     // [SerializeField] private List<GameObject> pool = new List<GameObject>();
     public ObjectPool<GameObject> pool;
-    public ObjectPool<GameObject> enemyPool;
+   // public ObjectPool<GameObject> enemyPool;
     
     private void Awake()
     {
@@ -36,10 +36,10 @@ public class ObjectPooling : MonoBehaviour
         return Instantiate(bulletPrefab, transform);
     }
 
-    private GameObject CreateBulletEnemyObject()
-    {
-        return Instantiate(enemyBulletPrefab, transform);                   
-    }
+    //private GameObject CreateBulletEnemyObject()
+    //{
+    //    return Instantiate(enemyBulletPrefab, transform);                   
+    //}
 
     private void ActionOnDestroy(GameObject obj)
     {
