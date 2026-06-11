@@ -27,13 +27,7 @@ public class ObjectPooling : MonoBehaviour
             , ActionOnDestroy
             , true, poolSize, poolSize * 10
             );
-        //enemyPool = new ObjectPool<GameObject>(
-        //    () => CreateBulletEnemyObject()
-        //    , ActionOnGet
-        //    , ActionOnRelease
-        //    , ActionOnDestroy
-        //    , true, poolSize, poolSize * 10);
-
+       
         Populate();
     }
 
@@ -96,20 +90,14 @@ public class ObjectPooling : MonoBehaviour
         return pool.Get();
     }
 
-    //internal GameObject GetEnemyObject()
-    //{
-    //    return enemyPool.Get(); 
-    //}
+   
 
     internal T GetObject<T>()
     {
         return pool.Get().GetComponent<T>();
     }
 
-    //internal T GetEnemyObject<T>()
-    //{
-    //    return enemyPool.Get().GetComponent<T>();                            
-    //}
+   
 
 }
     
