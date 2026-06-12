@@ -66,9 +66,16 @@ public class EnemyMovement : MonoBehaviour
             if (Vector2.Distance(currentAllyOrPlayer.position, transform.position) <= distanceToStop)
             {
                 float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+                float deltaKanan = angle - transform.rotation.z;
+                float deltaKiri = angle - transform.rotation.z - 180f;
+                if(deltaKiri < deltaKanan)
+                {
+                    angle = angle - 180f;
+                }
                 transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, angle), rotationSpeed * Time.deltaTime);       
-                // Debug.Log("Distance to Stop " + distanceToStop);
-                moveSpeed = 0;
+                Debug.Log("Delta Kanan " + deltaKanan);
+                Debug.Log("Delta Kiri " + deltaKiri);
+                moveSpeed = 0;         
                 Shoot();                                                   
             }
             else
@@ -107,7 +114,7 @@ public class EnemyMovement : MonoBehaviour
         {
             foreach(Weapon weapon in weapons)
             {
-                weapon.FireEnemyBullet();
+                weapon.Fire();
             }                                           
           //  Debug.Log("Shooted");
             timeToFire = fireRate;
