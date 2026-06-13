@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 5021226568666229496}
   fireForce: 20
@@ -251,7 +252,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -275,6 +276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 4789437013303794173}
   fireForce: 20
@@ -365,7 +367,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -389,6 +391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 884604485010000198}
   fireForce: 20
@@ -572,7 +575,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -596,6 +599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 8027274459011152974}
   fireForce: 20
@@ -717,7 +721,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -741,6 +745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 4444949321288662750}
   fireForce: 20
@@ -862,7 +867,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -886,6 +891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 6275228572344889310}
   fireForce: 20
@@ -976,7 +982,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -1000,6 +1006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 6202492766512316690}
   fireForce: 20
@@ -1090,7 +1097,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -1114,6 +1121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 4303392046611329200}
   fireForce: 20
@@ -1204,7 +1212,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -1228,6 +1236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 8659718568367640147}
   fireForce: 20
@@ -1349,7 +1358,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -1373,6 +1382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 6482918475745962197}
   fireForce: 20
@@ -1494,7 +1504,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -1518,6 +1528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 4341187387363692191}
   fireForce: 20
@@ -1564,6 +1575,81 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2119165308572302365}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1952177113830587397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 778579032907506282}
+  - component: {fileID: 8755461090469612184}
+  - component: {fileID: 6091774658269735823}
+  m_Layer: 0
+  m_Name: HealthBar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &778579032907506282
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952177113830587397}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 5.954483, y: 0.30657154, z: 40.189453}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3711060803466253841}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -57.001, y: 227}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &8755461090469612184
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952177113830587397}
+  m_CullTransparentMesh: 1
+--- !u!114 &6091774658269735823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952177113830587397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -146128344, guid: 824ae2cf97f3fce42abfc1ec451a2e5a, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1978029462057270559
 GameObject:
   m_ObjectHideFlags: 0
@@ -1688,6 +1774,108 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1164378761455949282}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2355274545415443827
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3711060803466253841}
+  - component: {fileID: 6837970269800609113}
+  - component: {fileID: 370927602186508763}
+  - component: {fileID: 3020362114511178830}
+  m_Layer: 0
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3711060803466253841
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2355274545415443827}
+  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.0072939754, y: 0.008240157, z: 0.021676669}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 778579032907506282}
+  m_Father: {fileID: 4367092755516653219}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.18, y: -0.25}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!223 &6837970269800609113
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2355274545415443827}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &370927602186508763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2355274545415443827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 1
+--- !u!114 &3020362114511178830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2355274545415443827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &2412091220473485024
 GameObject:
   m_ObjectHideFlags: 0
@@ -1763,7 +1951,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -1787,6 +1975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 2930047525383831751}
   fireForce: 20
@@ -1877,7 +2066,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -1901,6 +2090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 817897983684468969}
   fireForce: 20
@@ -2022,7 +2212,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -2046,6 +2236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 4371190696281648592}
   fireForce: 20
@@ -2229,7 +2420,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -2253,6 +2444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 6411882090739330891}
   fireForce: 20
@@ -2343,7 +2535,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -2367,6 +2559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 2860613455741605897}
   fireForce: 20
@@ -2488,7 +2681,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -2512,6 +2705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 1249991277228204184}
   fireForce: 20
@@ -2602,7 +2796,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -2626,6 +2820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 6401587965302489491}
   fireForce: 20
@@ -2716,7 +2911,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -2740,6 +2935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 7875123881299885189}
   fireForce: 20
@@ -2830,7 +3026,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -2854,6 +3050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 4267443111342038471}
   fireForce: 20
@@ -2944,7 +3141,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -2968,6 +3165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 1397836889339991261}
   fireForce: 20
@@ -3213,7 +3411,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -3237,6 +3435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 8634525383310923882}
   fireForce: 20
@@ -3327,7 +3526,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -3351,6 +3550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 5157159153901479965}
   fireForce: 20
@@ -3472,7 +3672,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -3496,6 +3696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 1918010060319296081}
   fireForce: 20
@@ -3586,7 +3787,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -3610,6 +3811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 4464174582055585475}
   fireForce: 20
@@ -3700,7 +3902,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -3724,6 +3926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 6785475488892137204}
   fireForce: 20
@@ -3814,7 +4017,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -3838,6 +4041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 1981132695571958705}
   fireForce: 20
@@ -3990,7 +4194,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -4014,6 +4218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 1954455151246436737}
   fireForce: 20
@@ -4166,7 +4371,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -4190,6 +4395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 263219783059649868}
   fireForce: 20
@@ -4280,7 +4486,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -4304,6 +4510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 1687739467644572109}
   fireForce: 20
@@ -4394,7 +4601,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -4418,6 +4625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 7831737648579083381}
   fireForce: 20
@@ -4539,7 +4747,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -4563,6 +4771,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 291388747246332389}
   fireForce: 20
@@ -4653,7 +4862,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -4677,6 +4886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 3928585964946287258}
   fireForce: 20
@@ -4767,7 +4977,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -4791,6 +5001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 5716251345384572180}
   fireForce: 20
@@ -4881,7 +5092,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -4905,6 +5116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 4878486640029070254}
   fireForce: 20
@@ -4995,7 +5207,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -5019,6 +5231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 675747330739799311}
   fireForce: 20
@@ -5140,7 +5353,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -5164,6 +5377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 2100495013153480630}
   fireForce: 20
@@ -5254,7 +5468,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -5278,6 +5492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 1761853514976265591}
   fireForce: 20
@@ -5368,7 +5583,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -5392,6 +5607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 4106109209752321244}
   fireForce: 20
@@ -5482,7 +5698,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -5506,6 +5722,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 3782529633145841105}
   fireForce: 20
@@ -5627,7 +5844,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -5651,6 +5868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 5680685629736260151}
   fireForce: 20
@@ -5741,7 +5959,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -5765,6 +5983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 8395918675468004283}
   fireForce: 20
@@ -5948,7 +6167,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -5972,6 +6191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 6514421194180075605}
   fireForce: 20
@@ -6124,7 +6344,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -6148,6 +6368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 1575955515074611197}
   fireForce: 20
@@ -6269,7 +6490,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -6293,6 +6514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 3488789770465118343}
   fireForce: 20
@@ -6383,7 +6605,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -6407,6 +6629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 3103126418007669148}
   fireForce: 20
@@ -6497,7 +6720,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -6521,6 +6744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 7943738633946309584}
   fireForce: 20
@@ -6642,7 +6866,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -6666,6 +6890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 8527566660163102414}
   fireForce: 20
@@ -6756,7 +6981,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -6780,6 +7005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 5962411684377519004}
   fireForce: 20
@@ -6901,7 +7127,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -6925,6 +7151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 2189587414298582894}
   fireForce: 20
@@ -7046,7 +7273,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -7070,6 +7297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 1658548633631157393}
   fireForce: 20
@@ -7160,7 +7388,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -7184,6 +7412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 1818427727887319615}
   fireForce: 20
@@ -7398,7 +7627,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -7422,6 +7651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 836532456913957104}
   fireForce: 20
@@ -7512,7 +7742,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -7536,6 +7766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 5551838600373373860}
   fireForce: 20
@@ -7657,7 +7888,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -7681,6 +7912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 5407898223228524686}
   fireForce: 20
@@ -7771,7 +8003,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -7795,6 +8027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 5073687381933566000}
   fireForce: 20
@@ -7885,7 +8118,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -7909,6 +8142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 3798099771471920375}
   fireForce: 20
@@ -8185,7 +8419,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -8209,6 +8443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 1317014024362186868}
   fireForce: 20
@@ -8299,7 +8534,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -8323,6 +8558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 9081189613187481550}
   fireForce: 20
@@ -8475,7 +8711,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -8499,6 +8735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 8136798511696491038}
   fireForce: 20
@@ -8543,9 +8780,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -94.498795, y: -27.78, z: 0}
-  m_LocalScale: {x: 20.95092, y: 22.332298, z: 18.418392}
+  m_LocalScale: {x: 20, y: 20, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 3711060803466253841}
   - {fileID: 2399388479322832980}
   - {fileID: 2119165308572302365}
   - {fileID: 5430825357490262921}
@@ -8652,7 +8890,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 85b54556ddf2b4f468cd2662d2e10694, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8677,12 +8915,76 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allyColumn: 
-  moveSpeed: 100
+  moveSpeed: 65
   rotationSpeed: 40
   leader: {fileID: 0}
   fleetLeader: {fileID: 0}
-  fireRate: 0
-  weapons: []
+  fireRate: 3
+  weapons:
+  - {fileID: 1668684696978135093}
+  - {fileID: 2936748477002532031}
+  - {fileID: 6561609545818910126}
+  - {fileID: 762766873710676176}
+  - {fileID: 1412243815699630715}
+  - {fileID: 3843529715554004136}
+  - {fileID: 7112018762418133508}
+  - {fileID: 6443657370901655707}
+  - {fileID: 9035332296736194393}
+  - {fileID: 2044706278541831301}
+  - {fileID: 4648380234276824127}
+  - {fileID: 7579201268785386349}
+  - {fileID: 3245546227630213}
+  - {fileID: 6766529978890373650}
+  - {fileID: 1943883054183544841}
+  - {fileID: 359433793793519475}
+  - {fileID: 19422029242468378}
+  - {fileID: 2704509068982188373}
+  - {fileID: 6155983407922486391}
+  - {fileID: 6877863925362923197}
+  - {fileID: 7122778739764068385}
+  - {fileID: 2081909597899805000}
+  - {fileID: 3895599950798389433}
+  - {fileID: 2247100794076448897}
+  - {fileID: 5991457192489900606}
+  - {fileID: 7108980200864681725}
+  - {fileID: 2168037775570855386}
+  - {fileID: 1572775337299123638}
+  - {fileID: 4822337096359096879}
+  - {fileID: 4314691383965472947}
+  - {fileID: 7766305911391358553}
+  - {fileID: 2855696158886547159}
+  - {fileID: 4176402325038687568}
+  - {fileID: 7027885196504089735}
+  - {fileID: 1384992636035444248}
+  - {fileID: 3117517155736257312}
+  - {fileID: 9179776426953537030}
+  - {fileID: 4894496499769810215}
+  - {fileID: 9025859383114937083}
+  - {fileID: 2328000758451749594}
+  - {fileID: 7911350543599190799}
+  - {fileID: 4949360002277540184}
+  - {fileID: 5831069255427290233}
+  - {fileID: 8575493779579177955}
+  - {fileID: 9180790866815828361}
+  - {fileID: 1968201383460445043}
+  - {fileID: 4815253769607346631}
+  - {fileID: 3368901267306990033}
+  - {fileID: 944215432603072465}
+  - {fileID: 3051355161943020421}
+  - {fileID: 332253501291015709}
+  - {fileID: 2593551928525241256}
+  - {fileID: 7685001398145325462}
+  - {fileID: 691660931653787900}
+  - {fileID: 8700376409351567446}
+  - {fileID: 29358644122547589}
+  - {fileID: 5451783261509968235}
+  - {fileID: 8231174784929328989}
+  - {fileID: 6015100407779243924}
+  - {fileID: 5569638257625925278}
+  - {fileID: 4713826555542929969}
+  - {fileID: 3174905708510971257}
+  - {fileID: 4825697635771467784}
+  - {fileID: 2881494527415503705}
   combatDistance: 10
   enemyLayer:
     serializedVersion: 2
@@ -8782,7 +9084,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -8806,6 +9108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 7070476820308135914}
   fireForce: 20
@@ -9020,7 +9323,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -9044,6 +9347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 2516421778348521133}
   fireForce: 20
@@ -9258,7 +9562,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -9282,6 +9586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 3521084665048303336}
   fireForce: 20
@@ -9372,7 +9677,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5188679, g: 0.5017355, b: 0.5017355, a: 1}
   m_FlipX: 0
@@ -9396,6 +9701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: cb7370e9c1406b54ba9b82ad28d2ac40, type: 3}
   firePoint: {fileID: 3069438581580828878}
   fireForce: 20
