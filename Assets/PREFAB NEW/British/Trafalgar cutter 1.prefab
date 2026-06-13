@@ -472,7 +472,7 @@ GameObject:
   - component: {fileID: 5130822124097276081}
   m_Layer: 0
   m_Name: Trafalgar cutter 1
-  m_TagString: Player
+  m_TagString: Ally
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -711,7 +711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxhealth: 55
-  healthImage: {fileID: 0}
+  healthImage: {fileID: 8802742768543888598}
   currentHealth: 55
 --- !u!1 &2486797587472289563
 GameObject:

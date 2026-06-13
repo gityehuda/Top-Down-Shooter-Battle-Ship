@@ -10293,7 +10293,7 @@ GameObject:
   - component: {fileID: 3432988670590315583}
   m_Layer: 0
   m_Name: trafalgar_threedecker
-  m_TagString: Untagged
+  m_TagString: Ally
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10634,7 +10634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxhealth: 150
-  healthImage: {fileID: 0}
+  healthImage: {fileID: 179894060675000364}
   currentHealth: 150
 --- !u!1 &6717598670845987798
 GameObject:

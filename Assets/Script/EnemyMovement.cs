@@ -28,7 +28,7 @@ public class EnemyMovement : MonoBehaviour
     //  public GameObject bulletPrefab; 
     public float rotationSpeed = 0.1f;
     private float sideDistance = 5f;
-    private float detectionRadius = 70f;
+    private float detectionRadius = 120f;
     public LayerMask allyLayer;
     float side = 1f;
     public Transform currentAllyOrPlayer;
@@ -66,6 +66,13 @@ public class EnemyMovement : MonoBehaviour
             if (Vector2.Distance(currentAllyOrPlayer.position, transform.position) <= distanceToStop)
             {
                 float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+                float deltaKanan = angle - transform.rotation.z;
+                float deltaKiri = angle - transform.rotation.z - 180f;
+
+                if(deltaKiri < deltaKanan)
+                {
+                    angle = angle - 180f;
+                }
                 transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, angle), rotationSpeed * Time.deltaTime);       
                 // Debug.Log("Distance to Stop " + distanceToStop);
                 moveSpeed = 0;
@@ -137,13 +144,14 @@ public class EnemyMovement : MonoBehaviour
     {
         Collider2D[] enemies = Physics2D.OverlapCircleAll(transform.position, detectionRadius);
         float closestDistance = Mathf.Infinity;
-        Transform closestEnemy = null;
+        Transform closestEnemy = null;     
 
         foreach (Collider2D enemy in enemies)
         {
-            //Debug.Log("Ally: " + enemy);          
+               
             if (enemy.tag == "Player" || enemy.tag == "Ally")
-            {
+            { 
+                Debug.Log("Ally: " + enemy);            
                 float distance = Vector2.Distance(transform.position, enemy.transform.position);
 
                 if (distance < closestDistance)

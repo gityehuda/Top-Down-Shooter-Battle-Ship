@@ -130,6 +130,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1894847818}
     m_Modifications:
+    - target: {fileID: 686193692037099879, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4367092755516653219, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
       propertyPath: m_LocalScale.x
       value: 20
@@ -182,9 +186,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -75.853
       objectReference: {fileID: 0}
+    - target: {fileID: 6837970269800609113, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
       propertyPath: m_Name
       value: TopAlly3_Ajax
+      objectReference: {fileID: 0}
+    - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -274,6 +286,10 @@ PrefabInstance:
     - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_Name
       value: Enemy6_Monarca
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700298902749572282, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -442,9 +458,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -70.581
       objectReference: {fileID: 0}
+    - target: {fileID: 3432988670590315583, guid: 8c5340dc5ff30c949b64b476e9bd2dfd, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6688836463336158021, guid: 8c5340dc5ff30c949b64b476e9bd2dfd, type: 3}
       propertyPath: m_Name
       value: TopAlly13_Britannia
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688836463336158021, guid: 8c5340dc5ff30c949b64b476e9bd2dfd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821879144465872953, guid: 8c5340dc5ff30c949b64b476e9bd2dfd, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -725,6 +753,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1975859197}
     m_Modifications:
+    - target: {fileID: 663668862805756425, guid: 5ef016be6e7ca1d4ba03febf233af30c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2317078272952629504, guid: 5ef016be6e7ca1d4ba03febf233af30c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -513.3
@@ -1204,6 +1236,10 @@ PrefabInstance:
     - target: {fileID: 3542433216399738767, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
       propertyPath: m_LocalPosition.y
       value: 18.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607958634960456295, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3691648494237829524, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2744,6 +2780,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.099
       objectReference: {fileID: 0}
+    - target: {fileID: 3607958634960456295, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3691648494237829524, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.277
@@ -3444,6 +3484,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1894847818}
     m_Modifications:
+    - target: {fileID: 686193692037099879, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1254545548346570913, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: currentEnemy
+      value: 
+      objectReference: {fileID: 6132273653977540445}
     - target: {fileID: 4367092755516653219, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
       propertyPath: m_LocalScale.x
       value: 20
@@ -3496,6 +3544,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 6837970269800609113, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
       propertyPath: m_Name
       value: TopAlly18_Africa
@@ -3547,6 +3599,10 @@ PrefabInstance:
     - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_Name
       value: Enemy17_Achille
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700298902749572282, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3992,6 +4048,10 @@ PrefabInstance:
     - target: {fileID: 3542433216399738767, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.099
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607958634960456295, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3691648494237829524, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5191,6 +5251,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy11_Bucentaure
       objectReference: {fileID: 0}
+    - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5192483142497546076, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700298902749572282, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -940.5
@@ -5607,9 +5679,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 6837970269800609113, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
       propertyPath: m_Name
       value: BottomAlly3_Mars
+      objectReference: {fileID: 0}
+    - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5634,6 +5714,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1975859197}
     m_Modifications:
+    - target: {fileID: 4360152948057090879, guid: ab1e91c372ca95b46bcc77cf822a8df3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6224978899474556701, guid: ab1e91c372ca95b46bcc77cf822a8df3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -223.6001
@@ -5731,9 +5815,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 6837970269800609113, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
       propertyPath: m_Name
       value: BottomAlly5_Bellerophon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5802,6 +5894,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy18_Principe de Asturias
       objectReference: {fileID: 0}
+    - target: {fileID: 5794837860992727993, guid: 676f2dcff6f610f4bb52f6fe7c5b32ca, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5818,6 +5914,10 @@ PrefabInstance:
     - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_Name
       value: Enemy9_Bahama
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700298902749572282, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5875,6 +5975,18 @@ PrefabInstance:
     - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_Name
       value: Enemy2_Scipion
+      objectReference: {fileID: 0}
+    - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5192483142497546076, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700298902749572282, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6472,6 +6584,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BottomAlly1_Royal SOvereign
       objectReference: {fileID: 0}
+    - target: {fileID: 6688836463336158021, guid: 8c5340dc5ff30c949b64b476e9bd2dfd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821879144465872953, guid: 8c5340dc5ff30c949b64b476e9bd2dfd, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6613,6 +6733,18 @@ PrefabInstance:
     - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_Name
       value: Enemy8_San Francisco de Asis
+      objectReference: {fileID: 0}
+    - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5192483142497546076, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700298902749572282, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6786,9 +6918,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -65.994
       objectReference: {fileID: 0}
+    - target: {fileID: 3432988670590315583, guid: 8c5340dc5ff30c949b64b476e9bd2dfd, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6688836463336158021, guid: 8c5340dc5ff30c949b64b476e9bd2dfd, type: 3}
       propertyPath: m_Name
       value: TopAlly6_Temeraire
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688836463336158021, guid: 8c5340dc5ff30c949b64b476e9bd2dfd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821879144465872953, guid: 8c5340dc5ff30c949b64b476e9bd2dfd, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7225,6 +7369,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BottomAlly12_Dreadnought
       objectReference: {fileID: 0}
+    - target: {fileID: 6688836463336158021, guid: 8c5340dc5ff30c949b64b476e9bd2dfd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821879144465872953, guid: 8c5340dc5ff30c949b64b476e9bd2dfd, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7465,9 +7617,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 6837970269800609113, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
       propertyPath: m_Name
       value: BottomAlly4_Tonnant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8101,6 +8261,18 @@ PrefabInstance:
     - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_Name
       value: Enemy13_San Justo
+      objectReference: {fileID: 0}
+    - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5192483142497546076, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700298902749572282, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8926,6 +9098,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy7_Algesiras
       objectReference: {fileID: 0}
+    - target: {fileID: 5700298902749572282, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -617.9
@@ -9370,6 +9546,10 @@ PrefabInstance:
     - target: {fileID: 3542433216399738767, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
       propertyPath: m_LocalPosition.y
       value: -58.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607958634960456295, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3691648494237829524, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9911,6 +10091,18 @@ PrefabInstance:
     - target: {fileID: 790489555872606786, guid: 81eaafef357d97847b30683d80cb6c33, type: 3}
       propertyPath: m_Name
       value: TopAlly10_Naiad
+      objectReference: {fileID: 0}
+    - target: {fileID: 790489555872606786, guid: 81eaafef357d97847b30683d80cb6c33, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868646491483420243, guid: 81eaafef357d97847b30683d80cb6c33, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5477743007060280798, guid: 81eaafef357d97847b30683d80cb6c33, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9062253678341363433, guid: 81eaafef357d97847b30683d80cb6c33, type: 3}
       propertyPath: m_LocalScale.x
@@ -12264,6 +12456,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1894847818}
     m_Modifications:
+    - target: {fileID: 686193692037099879, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4367092755516653219, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
       propertyPath: m_LocalScale.x
       value: 20
@@ -12316,9 +12512,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -79.877
       objectReference: {fileID: 0}
+    - target: {fileID: 6837970269800609113, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
       propertyPath: m_Name
       value: TopAlly7_Minotaur
+      objectReference: {fileID: 0}
+    - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12595,6 +12799,10 @@ PrefabInstance:
     - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_Name
       value: Enemy16_San Ildefonso
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700298902749572282, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13696,6 +13904,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy10_Montanes
       objectReference: {fileID: 0}
+    - target: {fileID: 5700298902749572282, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -421
@@ -14010,6 +14222,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1894847818}
     m_Modifications:
+    - target: {fileID: 686193692037099879, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4367092755516653219, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
       propertyPath: m_LocalScale.x
       value: 20
@@ -14062,9 +14278,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -82.732
       objectReference: {fileID: 0}
+    - target: {fileID: 6837970269800609113, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
       propertyPath: m_Name
       value: TopALly9_Spartiate
+      objectReference: {fileID: 0}
+    - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14269,6 +14493,10 @@ PrefabInstance:
     - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_Name
       value: Enemy14_Argonauta
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700298902749572282, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14949,6 +15177,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.099
       objectReference: {fileID: 0}
+    - target: {fileID: 3607958634960456295, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3691648494237829524, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.277
@@ -15502,6 +15734,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy1_Indomptable
       objectReference: {fileID: 0}
+    - target: {fileID: 5700298902749572282, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -228
@@ -15563,6 +15799,10 @@ PrefabInstance:
     - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_Name
       value: Enemy12_Swiftsure
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700298902749572282, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16418,6 +16658,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: TopAlly16_Phoebe
       objectReference: {fileID: 0}
+    - target: {fileID: 790489555872606786, guid: 81eaafef357d97847b30683d80cb6c33, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868646491483420243, guid: 81eaafef357d97847b30683d80cb6c33, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5477743007060280798, guid: 81eaafef357d97847b30683d80cb6c33, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 9062253678341363433, guid: 81eaafef357d97847b30683d80cb6c33, type: 3}
       propertyPath: m_LocalScale.x
       value: 20
@@ -16528,9 +16780,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 6837970269800609113, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
       propertyPath: m_Name
       value: BottomAlly6_Colossus
+      objectReference: {fileID: 0}
+    - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16762,6 +17022,18 @@ PrefabInstance:
     - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_Name
       value: Enemy6_Mont Blanc
+      objectReference: {fileID: 0}
+    - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5192483142497546076, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700298902749572282, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17353,6 +17625,10 @@ PrefabInstance:
     - target: {fileID: 3542433216399738767, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
       propertyPath: m_LocalPosition.y
       value: 18.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607958634960456295, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3691648494237829524, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18108,9 +18384,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 6837970269800609113, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
       propertyPath: m_Name
       value: BottomAlly15_Defence
+      objectReference: {fileID: 0}
+    - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18902,9 +19186,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 6837970269800609113, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
       propertyPath: m_Name
       value: BottomAlly7_Achilles
+      objectReference: {fileID: 0}
+    - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19575,6 +19867,10 @@ PrefabInstance:
     - target: {fileID: 3542433216399738767, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.099
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607958634960456295, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3691648494237829524, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20482,6 +20778,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy11_Aigle
       objectReference: {fileID: 0}
+    - target: {fileID: 5700298902749572282, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -648.1
@@ -20695,9 +20995,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 6837970269800609113, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
       propertyPath: m_Name
       value: BottomAlly11_Swiftsure
+      objectReference: {fileID: 0}
+    - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21290,6 +21598,10 @@ PrefabInstance:
     - target: {fileID: 3542433216399738767, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.099
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607958634960456295, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3691648494237829524, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22126,6 +22438,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy17_Heros
       objectReference: {fileID: 0}
+    - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5192483142497546076, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700298902749572282, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1164
@@ -22427,9 +22751,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3551037819865111521, guid: b68a8afce7c49ff47b7ec498492ae99c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879806328631305676, guid: b68a8afce7c49ff47b7ec498492ae99c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6094791380046208349, guid: b68a8afce7c49ff47b7ec498492ae99c, type: 3}
       propertyPath: m_Name
       value: Enemy10_Santissima Trinidad
+      objectReference: {fileID: 0}
+    - target: {fileID: 6094791380046208349, guid: b68a8afce7c49ff47b7ec498492ae99c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22683,6 +23019,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 732656981}
     m_Modifications:
+    - target: {fileID: 616053814834718215, guid: 676f2dcff6f610f4bb52f6fe7c5b32ca, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1884336152715986252, guid: 676f2dcff6f610f4bb52f6fe7c5b32ca, type: 3}
       propertyPath: m_LocalPosition.x
       value: -774.8
@@ -22726,6 +23066,14 @@ PrefabInstance:
     - target: {fileID: 5521944549035378777, guid: 676f2dcff6f610f4bb52f6fe7c5b32ca, type: 3}
       propertyPath: m_Name
       value: Enemy5_Rayo
+      objectReference: {fileID: 0}
+    - target: {fileID: 5521944549035378777, guid: 676f2dcff6f610f4bb52f6fe7c5b32ca, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5794837860992727993, guid: 676f2dcff6f610f4bb52f6fe7c5b32ca, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23779,6 +24127,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.099
       objectReference: {fileID: 0}
+    - target: {fileID: 3607958634960456295, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3691648494237829524, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.277
@@ -24400,7 +24752,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!1 &972395683
 GameObject:
@@ -25079,6 +25431,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.099
       objectReference: {fileID: 0}
+    - target: {fileID: 3607958634960456295, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3691648494237829524, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.218
@@ -25712,6 +26068,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1894847818}
     m_Modifications:
+    - target: {fileID: 686193692037099879, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4367092755516653219, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
       propertyPath: m_LocalScale.x
       value: 20
@@ -25768,6 +26128,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 85b54556ddf2b4f468cd2662d2e10694, type: 3}
+    - target: {fileID: 6837970269800609113, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
       propertyPath: m_Name
       value: TopAlly5_Orion
@@ -25997,9 +26361,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 6837970269800609113, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
       propertyPath: m_Name
       value: BottomAlly8_Revenge
+      objectReference: {fileID: 0}
+    - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26076,9 +26448,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -64.425
       objectReference: {fileID: 0}
+    - target: {fileID: 3432988670590315583, guid: 8c5340dc5ff30c949b64b476e9bd2dfd, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090473552767193403, guid: 8c5340dc5ff30c949b64b476e9bd2dfd, type: 3}
+      propertyPath: currentEnemy
+      value: 
+      objectReference: {fileID: 376558932}
     - target: {fileID: 6688836463336158021, guid: 8c5340dc5ff30c949b64b476e9bd2dfd, type: 3}
       propertyPath: m_Name
       value: TopAlly12_Neptune
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688836463336158021, guid: 8c5340dc5ff30c949b64b476e9bd2dfd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821879144465872953, guid: 8c5340dc5ff30c949b64b476e9bd2dfd, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26101,6 +26489,18 @@ PrefabInstance:
     - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_Name
       value: Enemy3_Intrepide
+      objectReference: {fileID: 0}
+    - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5192483142497546076, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700298902749572282, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26984,6 +27384,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1975859197}
     m_Modifications:
+    - target: {fileID: 4360152948057090879, guid: ab1e91c372ca95b46bcc77cf822a8df3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6224978899474556701, guid: ab1e91c372ca95b46bcc77cf822a8df3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -243
@@ -29015,6 +29419,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.099
       objectReference: {fileID: 0}
+    - target: {fileID: 3607958634960456295, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3691648494237829524, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.277
@@ -30729,6 +31137,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.099
       objectReference: {fileID: 0}
+    - target: {fileID: 3607958634960456295, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3691648494237829524, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.277
@@ -31298,9 +31710,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 6837970269800609113, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
       propertyPath: m_Name
       value: BottomAlly9_Defiance
+      objectReference: {fileID: 0}
+    - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31333,6 +31753,14 @@ PrefabInstance:
     - target: {fileID: 2034019814652488232, guid: 2ed918b5f2cef904c848f2fef1366ab7, type: 3}
       propertyPath: m_Name
       value: TopAlly17_Entreprenante
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034019814652488232, guid: 2ed918b5f2cef904c848f2fef1366ab7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130822124097276081, guid: 2ed918b5f2cef904c848f2fef1366ab7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5657537131592346726, guid: 2ed918b5f2cef904c848f2fef1366ab7, type: 3}
       propertyPath: m_LocalScale.x
@@ -31385,6 +31813,10 @@ PrefabInstance:
     - target: {fileID: 5657537131592346726, guid: 2ed918b5f2cef904c848f2fef1366ab7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7910761252200706669, guid: 2ed918b5f2cef904c848f2fef1366ab7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31701,9 +32133,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1894847818}
     m_Modifications:
+    - target: {fileID: -7747179151092607727, guid: 81eaafef357d97847b30683d80cb6c33, type: 3}
+      propertyPath: currentEnemy
+      value: 
+      objectReference: {fileID: 328134768262774006}
     - target: {fileID: 790489555872606786, guid: 81eaafef357d97847b30683d80cb6c33, type: 3}
       propertyPath: m_Name
       value: TopAlly4_Euryalus
+      objectReference: {fileID: 0}
+    - target: {fileID: 790489555872606786, guid: 81eaafef357d97847b30683d80cb6c33, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868646491483420243, guid: 81eaafef357d97847b30683d80cb6c33, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5477743007060280798, guid: 81eaafef357d97847b30683d80cb6c33, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9062253678341363433, guid: 81eaafef357d97847b30683d80cb6c33, type: 3}
       propertyPath: m_LocalScale.x
@@ -33466,6 +33914,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.099
       objectReference: {fileID: 0}
+    - target: {fileID: 3607958634960456295, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3691648494237829524, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.277
@@ -34077,6 +34529,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 732656981}
     m_Modifications:
+    - target: {fileID: 3778003775842342822, guid: ab1e91c372ca95b46bcc77cf822a8df3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4360152948057090879, guid: ab1e91c372ca95b46bcc77cf822a8df3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6224978899474556701, guid: ab1e91c372ca95b46bcc77cf822a8df3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -932
@@ -34120,6 +34580,10 @@ PrefabInstance:
     - target: {fileID: 8106485472051335430, guid: ab1e91c372ca95b46bcc77cf822a8df3, type: 3}
       propertyPath: m_Name
       value: Enemy15_Hortense
+      objectReference: {fileID: 0}
+    - target: {fileID: 8106485472051335430, guid: ab1e91c372ca95b46bcc77cf822a8df3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -34350,6 +34814,18 @@ PrefabInstance:
     - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_Name
       value: Enemy9_San Agustin
+      objectReference: {fileID: 0}
+    - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5192483142497546076, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700298902749572282, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -34766,6 +35242,18 @@ PrefabInstance:
     - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_Name
       value: Enemy18_Formidable
+      objectReference: {fileID: 0}
+    - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5192483142497546076, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700298902749572282, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -35439,6 +35927,10 @@ PrefabInstance:
     - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_Name
       value: Enemy13_Argonaute
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700298902749572282, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -36165,6 +36657,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy5_Pluton
       objectReference: {fileID: 0}
+    - target: {fileID: 5700298902749572282, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -657.1
@@ -36385,9 +36881,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -78.353
       objectReference: {fileID: 0}
+    - target: {fileID: 3432988670590315583, guid: 8c5340dc5ff30c949b64b476e9bd2dfd, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6688836463336158021, guid: 8c5340dc5ff30c949b64b476e9bd2dfd, type: 3}
       propertyPath: m_Name
       value: TopALly15_Prince
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688836463336158021, guid: 8c5340dc5ff30c949b64b476e9bd2dfd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821879144465872953, guid: 8c5340dc5ff30c949b64b476e9bd2dfd, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -36929,6 +37437,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1894847818}
     m_Modifications:
+    - target: {fileID: 686193692037099879, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4367092755516653219, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
       propertyPath: m_LocalScale.x
       value: 20
@@ -36981,9 +37493,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -82.424
       objectReference: {fileID: 0}
+    - target: {fileID: 6837970269800609113, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
       propertyPath: m_Name
       value: TopAlly8_Agamemnon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -37042,6 +37562,18 @@ PrefabInstance:
     - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_Name
       value: Enemy4_Duguay-Trouin
+      objectReference: {fileID: 0}
+    - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5192483142497546076, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700298902749572282, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -37518,6 +38050,10 @@ PrefabInstance:
     - target: {fileID: 3542433216399738767, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.099
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607958634960456295, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3691648494237829524, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
       propertyPath: m_LocalPosition.x
@@ -38340,6 +38876,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1894847818}
     m_Modifications:
+    - target: {fileID: 686193692037099879, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4367092755516653219, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
       propertyPath: m_LocalScale.x
       value: 20
@@ -38392,9 +38932,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -63.406
       objectReference: {fileID: 0}
+    - target: {fileID: 6837970269800609113, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
       propertyPath: m_Name
       value: TopAlly14_COnqueror
+      objectReference: {fileID: 0}
+    - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -38417,6 +38965,18 @@ PrefabInstance:
     - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_Name
       value: Enemy14_Neptune
+      objectReference: {fileID: 0}
+    - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5192483142497546076, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700298902749572282, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -38977,6 +39537,10 @@ PrefabInstance:
     - target: {fileID: 3542433216399738767, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.099
+      objectReference: {fileID: 0}
+    - target: {fileID: 3607958634960456295, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3691648494237829524, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
       propertyPath: m_LocalPosition.x
@@ -41305,6 +41869,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: TopAlly16_Pickle
       objectReference: {fileID: 0}
+    - target: {fileID: 2034019814652488232, guid: 2ed918b5f2cef904c848f2fef1366ab7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130822124097276081, guid: 2ed918b5f2cef904c848f2fef1366ab7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5657537131592346726, guid: 2ed918b5f2cef904c848f2fef1366ab7, type: 3}
       propertyPath: m_LocalScale.x
       value: 20
@@ -41357,6 +41929,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 7910761252200706669, guid: 2ed918b5f2cef904c848f2fef1366ab7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -41383,6 +41959,10 @@ PrefabInstance:
     - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_Name
       value: Enemy20_San Juan Nepomuceno
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700298902749572282, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -41734,6 +42314,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1975859197}
     m_Modifications:
+    - target: {fileID: 4360152948057090879, guid: ab1e91c372ca95b46bcc77cf822a8df3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6224978899474556701, guid: ab1e91c372ca95b46bcc77cf822a8df3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -100
@@ -42047,6 +42631,10 @@ PrefabInstance:
     - target: {fileID: 5521944549035378777, guid: 676f2dcff6f610f4bb52f6fe7c5b32ca, type: 3}
       propertyPath: m_Name
       value: Enemy2_Santa Ana
+      objectReference: {fileID: 0}
+    - target: {fileID: 5794837860992727993, guid: 676f2dcff6f610f4bb52f6fe7c5b32ca, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -42468,9 +43056,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1894847818}
     m_Modifications:
+    - target: {fileID: -7747179151092607727, guid: 81eaafef357d97847b30683d80cb6c33, type: 3}
+      propertyPath: currentEnemy
+      value: 
+      objectReference: {fileID: 1337700906}
     - target: {fileID: 790489555872606786, guid: 81eaafef357d97847b30683d80cb6c33, type: 3}
       propertyPath: m_Name
       value: TopALly11_Sirius
+      objectReference: {fileID: 0}
+    - target: {fileID: 790489555872606786, guid: 81eaafef357d97847b30683d80cb6c33, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868646491483420243, guid: 81eaafef357d97847b30683d80cb6c33, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5477743007060280798, guid: 81eaafef357d97847b30683d80cb6c33, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9062253678341363433, guid: 81eaafef357d97847b30683d80cb6c33, type: 3}
       propertyPath: m_LocalScale.x
@@ -42806,6 +43410,18 @@ PrefabInstance:
     - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_Name
       value: Enemy12_Redoutable
+      objectReference: {fileID: 0}
+    - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5192483142497546076, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700298902749572282, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -43771,7 +44387,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!1 &1686825033
 GameObject:
@@ -44188,6 +44804,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 732656981}
     m_Modifications:
+    - target: {fileID: 663668862805756425, guid: 5ef016be6e7ca1d4ba03febf233af30c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2317078272952629504, guid: 5ef016be6e7ca1d4ba03febf233af30c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -622
@@ -44228,9 +44848,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3688575684025422179, guid: 5ef016be6e7ca1d4ba03febf233af30c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3748037093370952621, guid: 5ef016be6e7ca1d4ba03febf233af30c, type: 3}
       propertyPath: m_Name
       value: Enemy19_Furret
+      objectReference: {fileID: 0}
+    - target: {fileID: 3748037093370952621, guid: 5ef016be6e7ca1d4ba03febf233af30c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -44949,6 +45577,18 @@ PrefabInstance:
     - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_Name
       value: Enemy16_San Leandro
+      objectReference: {fileID: 0}
+    - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5192483142497546076, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700298902749572282, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -45886,9 +46526,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 6837970269800609113, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
       propertyPath: m_Name
       value: BottomAlly2_Belleisle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -46502,7 +47150,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!224 &1842678288
 RectTransform:
@@ -46874,7 +47522,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1866641766}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 837ce66f57f379a43bf3ca307324add8, type: 3}
   m_Name: 
@@ -47023,6 +47671,10 @@ PrefabInstance:
     - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_Name
       value: Enemy19_Berwick
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700298902749572282, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -48548,9 +49200,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 6837970269800609113, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
       propertyPath: m_Name
       value: BottomAlly10_Polyphemus
+      objectReference: {fileID: 0}
+    - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -49566,7 +50226,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1975859197
 Transform:
   m_ObjectHideFlags: 0
@@ -50630,9 +51290,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 6837970269800609113, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
       propertyPath: m_Name
       value: BottomAlly13_Thunderer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -51439,6 +52107,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 732656981}
     m_Modifications:
+    - target: {fileID: 3778003775842342822, guid: ab1e91c372ca95b46bcc77cf822a8df3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4360152948057090879, guid: ab1e91c372ca95b46bcc77cf822a8df3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6224978899474556701, guid: ab1e91c372ca95b46bcc77cf822a8df3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -909.8
@@ -51483,6 +52159,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy7_Rhin
       objectReference: {fileID: 0}
+    - target: {fileID: 8106485472051335430, guid: ab1e91c372ca95b46bcc77cf822a8df3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -51501,6 +52181,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1894847818}
     m_Modifications:
+    - target: {fileID: 686193692037099879, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4367092755516653219, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
       propertyPath: m_LocalScale.x
       value: 20
@@ -51553,9 +52237,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -68.59
       objectReference: {fileID: 0}
+    - target: {fileID: 6837970269800609113, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
       propertyPath: m_Name
       value: TopAlly2_Leviathan
+      objectReference: {fileID: 0}
+    - target: {fileID: 8530526756004925488, guid: f00e2fa4ce375fd47b262c6816790982, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -79725,9 +80417,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1894847818}
     m_Modifications:
+    - target: {fileID: 616251061033137891, guid: 3aafe93290743e74da75fac64e8f26d7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5504848994156129711, guid: 3aafe93290743e74da75fac64e8f26d7, type: 3}
       propertyPath: m_Name
       value: TopAlly1_Victory
+      objectReference: {fileID: 0}
+    - target: {fileID: 5504848994156129711, guid: 3aafe93290743e74da75fac64e8f26d7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5763822856877054676, guid: 3aafe93290743e74da75fac64e8f26d7, type: 3}
       propertyPath: m_LocalScale.x
@@ -92341,6 +93041,10 @@ PrefabInstance:
     - target: {fileID: 840095493689914379, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_Name
       value: Enemy3_Fougueux
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700298902749572282, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -120200,6 +120904,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy1_Neptuno
       objectReference: {fileID: 0}
+    - target: {fileID: 3950140701636260204, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: rotationSpeed
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3950140701636260204, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: distanceToFire
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 3950140701636260204, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: distanceToStop
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 5192483142497546076, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700298902749572282, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -688
@@ -120241,7 +120965,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 139560902182411430, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c218a209144df54b8a12949c96a491c, type: 3}
@@ -121110,6 +121835,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 3607958634960456295, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4265189838836462511, guid: 7960ba5272c358e448d62189ccbe2296, type: 3}
       propertyPath: m_Name
       value: BottomAlly1
@@ -121650,7 +122379,7 @@ PrefabInstance:
       objectReference: {fileID: 4928147437277012326}
     - target: {fileID: 5700298902749572282, guid: 73870f23e17f5944cb2fa766603865ad, type: 3}
       propertyPath: m_SortingOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6761087046037186130, guid: 73870f23e17f5944cb2fa766603865ad, type: 3}
       propertyPath: m_LocalPosition.x
@@ -124455,7 +125184,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!114 &8265001883608297802
 MonoBehaviour:

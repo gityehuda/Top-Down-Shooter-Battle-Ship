@@ -12894,7 +12894,7 @@ GameObject:
   - component: {fileID: -4657542658474959615}
   m_Layer: 0
   m_Name: santissima_trinidad 1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13116,7 +13116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxhealth: 175
-  healthImage: {fileID: 0}
+  healthImage: {fileID: 6055412289560363181}
   currentHealth: 175
 --- !u!114 &-7037720901977879680
 MonoBehaviour:

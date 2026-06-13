@@ -1936,7 +1936,7 @@ GameObject:
   - component: {fileID: -7575861088820959399}
   m_Layer: 0
   m_Name: trafalgar_single_decker
-  m_TagString: Untagged
+  m_TagString: Ally
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2150,7 +2150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxhealth: 65
-  healthImage: {fileID: 0}
+  healthImage: {fileID: 3997393407820150988}
   currentHealth: 65
 --- !u!114 &-7575861088820959399
 MonoBehaviour:
