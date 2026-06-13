@@ -34,16 +34,8 @@ public class Weapon : MonoBehaviour
         // GameObject bulletObject = ObjectPooling.instance.GetObject();
         
             Bullet bullet = ObjectPooling.instance.GetObject<Bullet>();
-            if(transform.parent.tag == "Enemy")
-            {
-                bullet.gameObject.tag = "EnemyBullet";
-            }
-            else if(transform.parent.tag == "Ally")
-            {
-                bullet.gameObject.tag = "Bullet"; 
-            }
 
-        bullet.SetPosition(firePoint.position);
+            bullet.SetPosition(firePoint.position);
             bullet.SetRotation(firePoint.rotation);
             bullet.AddForce(firePoint.up * fireForce);
       

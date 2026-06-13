@@ -223,6 +223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: d3efd04c7b4a7f44fbb113834b95bd50, type: 3}
   firePoint: {fileID: 1171594228896432945}
   fireForce: 20
@@ -337,6 +338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: d3efd04c7b4a7f44fbb113834b95bd50, type: 3}
   firePoint: {fileID: 3467318902788943204}
   fireForce: 20
@@ -451,6 +453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: d3efd04c7b4a7f44fbb113834b95bd50, type: 3}
   firePoint: {fileID: 8661937075370388840}
   fireForce: 20
@@ -596,6 +599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: d3efd04c7b4a7f44fbb113834b95bd50, type: 3}
   firePoint: {fileID: 849508406993838349}
   fireForce: 20
@@ -816,6 +820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: d3efd04c7b4a7f44fbb113834b95bd50, type: 3}
   firePoint: {fileID: 7473242236967262346}
   fireForce: 20
@@ -930,6 +935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: d3efd04c7b4a7f44fbb113834b95bd50, type: 3}
   firePoint: {fileID: 8986448848104010342}
   fireForce: 20
@@ -1161,27 +1167,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   weapons:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 5786895941556610399}
+  - {fileID: 4427622046138898035}
+  - {fileID: 3808874540004577128}
+  - {fileID: 2225134607436790237}
+  - {fileID: 399729933231032462}
+  - {fileID: 758650948886729272}
+  - {fileID: 5594812162263865071}
+  - {fileID: 4497192572113315441}
+  - {fileID: 7212266936760885045}
+  - {fileID: 3479983637554136386}
+  - {fileID: 1194761786380653898}
+  - {fileID: 1611308613445785991}
+  - {fileID: 5791253091751997640}
+  - {fileID: 2473870832743624594}
+  - {fileID: 6879728701984727018}
+  - {fileID: 3066610420185998504}
   detector: {fileID: 8373626719888235763}
   distanceToFire: 30
   distanceToStop: 30
   firingPoint: {fileID: 0}
-  fireRate: 1
+  fireRate: 5
   rotationSpeed: 1
   allyLayer:
     serializedVersion: 2
@@ -1478,6 +1484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: d3efd04c7b4a7f44fbb113834b95bd50, type: 3}
   firePoint: {fileID: 7219491173508840481}
   fireForce: 20
@@ -1592,6 +1599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: d3efd04c7b4a7f44fbb113834b95bd50, type: 3}
   firePoint: {fileID: 1987885054614104163}
   fireForce: 20
@@ -1768,6 +1776,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: d3efd04c7b4a7f44fbb113834b95bd50, type: 3}
   firePoint: {fileID: 6496280089734390289}
   fireForce: 20
@@ -1882,6 +1891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: d3efd04c7b4a7f44fbb113834b95bd50, type: 3}
   firePoint: {fileID: 4581264477566842507}
   fireForce: 20
@@ -1996,6 +2006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: d3efd04c7b4a7f44fbb113834b95bd50, type: 3}
   firePoint: {fileID: 3757460837669937628}
   fireForce: 20
@@ -2141,6 +2152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: d3efd04c7b4a7f44fbb113834b95bd50, type: 3}
   firePoint: {fileID: 9104409015167150604}
   fireForce: 20
@@ -2317,6 +2329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: d3efd04c7b4a7f44fbb113834b95bd50, type: 3}
   firePoint: {fileID: 643404217825693796}
   fireForce: 20
@@ -2431,6 +2444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: d3efd04c7b4a7f44fbb113834b95bd50, type: 3}
   firePoint: {fileID: 1633791109888872263}
   fireForce: 20
@@ -2545,6 +2559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: d3efd04c7b4a7f44fbb113834b95bd50, type: 3}
   firePoint: {fileID: 4447358549792340820}
   fireForce: 20
@@ -2792,6 +2807,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16161fcfc33b0e845988e42eeb1b65a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponID: 
   bulletPrefab: {fileID: 2122892560005292402, guid: d3efd04c7b4a7f44fbb113834b95bd50, type: 3}
   firePoint: {fileID: 4256403425382304295}
   fireForce: 20
