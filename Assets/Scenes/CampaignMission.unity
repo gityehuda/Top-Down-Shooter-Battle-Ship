@@ -808,7 +808,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &397574754
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1639,6 +1639,7 @@ GameObject:
   - component: {fileID: 490161591}
   - component: {fileID: 490161593}
   - component: {fileID: 490161592}
+  - component: {fileID: 490161594}
   m_Layer: 5
   m_Name: DescriptionText
   m_TagString: Untagged
@@ -1662,8 +1663,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.0144, y: -4.3428}
-  m_SizeDelta: {x: 713.0986, y: 561.4724}
+  m_AnchoredPosition: {x: -0.00012490133, y: -247.22939}
+  m_SizeDelta: {x: 713.099, y: 887.019}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &490161592
 MonoBehaviour:
@@ -1685,27 +1686,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Ship
-
-
-
-
-
-
-    Class:
-
-    Width:
-
-    Length:
-
-    Top Speed:
-
-    Production
-    Year:
-
-    Armaments:
-
-    Captain:'
+  m_text: "Player Ship: HMS Victory\nClass: 104-gun first-rate ship of the line\nLength:
+    227 ft 6 in (69.34 m)\nTop Speed: up to 11 knots (20 km/h)\nYear Launched: 7
+    May 1765\nCommanding Officer: Vice-Admiral Lord Nelson \nCapt. Thomas Masterman
+    Hardy (Ship Captain)\nArmaments:\nTrafalgar: (104 guns total)\nGundeck: 30 \xD7
+    2.75-ton long pattern Blomefield 32-pounders (15 kg)\nMiddle gundeck: 28 \xD7
+    2.5-ton long 24-pounders (11 kg)\nUpper gundeck: 30 \xD7 1.7-ton short 12-pounders
+    (5 kg)\nQuarterdeck: 12 \xD7 1.7-ton short 12-pounder (5 kg)\nForecastle: 2 \xD7
+    medium 12-pounder (5 kg), 2 \xD7 68-pounder (31 kg) carronade"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1782,6 +1770,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 490161590}
   m_CullTransparentMesh: 1
+--- !u!114 &490161594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490161590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 20
+  m_ChildAlignment: 1
+  m_Spacing: 20
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &513591720
 GameObject:
   m_ObjectHideFlags: 0
@@ -2519,7 +2533,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 70
   m_Viewport: {fileID: 0}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 0}
@@ -5187,6 +5201,8 @@ GameObject:
   - component: {fileID: 1690318497}
   - component: {fileID: 1690318499}
   - component: {fileID: 1690318498}
+  - component: {fileID: 1690318500}
+  - component: {fileID: 1690318501}
   m_Layer: 5
   m_Name: BattleDescription
   m_TagString: Untagged
@@ -5252,6 +5268,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1690318496}
   m_CullTransparentMesh: 1
+--- !u!114 &1690318500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690318496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 490161591}
+  m_Horizontal: 0
+  m_Vertical: 1
+  m_MovementType: 1
+  m_Elasticity: 0.1
+  m_Inertia: 1
+  m_DecelerationRate: 0.135
+  m_ScrollSensitivity: 70
+  m_Viewport: {fileID: 0}
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 0}
+  m_HorizontalScrollbarVisibility: 0
+  m_VerticalScrollbarVisibility: 0
+  m_HorizontalScrollbarSpacing: 0
+  m_VerticalScrollbarSpacing: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1690318501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690318496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding: {x: 0, y: 0, z: 0, w: 0}
+  m_Softness: {x: 0, y: 0}
 --- !u!1 &1697031839
 GameObject:
   m_ObjectHideFlags: 0
@@ -5437,14 +5497,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6784314, g: 0.9725491, b: 0.95294124, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 55b8475437efd0944895f8e1369a0578, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 34355296b69a3ad4ca0dcfdea7c54749, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
