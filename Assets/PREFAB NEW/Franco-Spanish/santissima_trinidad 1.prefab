@@ -4637,7 +4637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -12892,6 +12892,7 @@ GameObject:
   - component: {fileID: 3879806328631305676}
   - component: {fileID: -7037720901977879680}
   - component: {fileID: -4657542658474959615}
+  - component: {fileID: -1597961208453655078}
   m_Layer: 0
   m_Name: santissima_trinidad 1
   m_TagString: Enemy
@@ -13283,8 +13284,8 @@ MonoBehaviour:
   - {fileID: 2795286455686274628}
   - {fileID: 2724245808426729343}
   detector: {fileID: 0}
-  distanceToFire: 30
-  distanceToStop: 30
+  distanceToFire: 80
+  distanceToStop: 80
   firingPoint: {fileID: 0}
   fireRate: 5
   rotationSpeed: 0.1
@@ -13292,6 +13293,137 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   currentAllyOrPlayer: {fileID: 0}
+--- !u!60 &-1597961208453655078
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6094791380046208349}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.12, y: 5.12}
+    newSize: {x: 5.12, y: 5.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.41, y: -1.09}
+      - {x: 0.48999998, y: -0.96999997}
+      - {x: 0.51, y: -0.88}
+      - {x: 0.55, y: -0.71999997}
+      - {x: 0.53, y: -0.61}
+      - {x: 0.57, y: -0.47}
+      - {x: 0.57, y: -0.38}
+      - {x: 0.59, y: -0.21}
+      - {x: 0.68, y: -0.17999999}
+      - {x: 0.71, y: -0.13}
+      - {x: 0.71, y: -0.08}
+      - {x: 0.62, y: -0.02}
+      - {x: 0.58, y: 0}
+      - {x: 0.58, y: 0.22}
+      - {x: 0.59, y: 0.29}
+      - {x: 0.58, y: 0.42999998}
+      - {x: 0.53999996, y: 0.48}
+      - {x: 0.56, y: 0.53999996}
+      - {x: 0.53, y: 0.62}
+      - {x: 0.68, y: 0.65}
+      - {x: 0.71, y: 0.7}
+      - {x: 0.71, y: 0.76}
+      - {x: 0.59, y: 0.83}
+      - {x: 0.45999998, y: 0.85999995}
+      - {x: 0.44, y: 0.85999995}
+      - {x: 0.45, y: 0.85999995}
+      - {x: 0.48, y: 0.87}
+      - {x: 0.48, y: 0.95}
+      - {x: 0.45999998, y: 0.96999997}
+      - {x: 0.42, y: 0.96999997}
+      - {x: 0.26999998, y: 1.16}
+      - {x: 0.35999998, y: 1.1899999}
+      - {x: 0.35999998, y: 1.26}
+      - {x: 0.24, y: 1.29}
+      - {x: 0.22999999, y: 1.3199999}
+      - {x: 0.21, y: 1.39}
+      - {x: 0.049999997, y: 1.42}
+      - {x: 0.049999997, y: 1.53}
+      - {x: 0.02, y: 1.55}
+      - {x: -0.03, y: 1.55}
+      - {x: -0.089999996, y: 1.4}
+      - {x: -0.21, y: 1.39}
+      - {x: -0.22999999, y: 1.31}
+      - {x: -0.17, y: 1.27}
+      - {x: -0.29999998, y: 1.27}
+      - {x: -0.34, y: 1.24}
+      - {x: -0.34, y: 1.1999999}
+      - {x: -0.29, y: 1.16}
+      - {x: -0.34, y: 1.0699999}
+      - {x: -0.45999998, y: 0.97999996}
+      - {x: -0.48999998, y: 0.89}
+      - {x: -0.5, y: 0.82}
+      - {x: -0.62, y: 0.81}
+      - {x: -0.71, y: 0.76}
+      - {x: -0.71, y: 0.7}
+      - {x: -0.68, y: 0.64}
+      - {x: -0.52, y: 0.65999997}
+      - {x: -0.55, y: 0.61}
+      - {x: -0.56, y: 0.53999996}
+      - {x: -0.55, y: 0.47}
+      - {x: -0.59, y: 0.39}
+      - {x: -0.59999996, y: 0.22999999}
+      - {x: -0.57, y: 0.16}
+      - {x: -0.59999996, y: 0.089999996}
+      - {x: -0.59999996, y: -0.01}
+      - {x: -0.71, y: -0.07}
+      - {x: -0.71, y: -0.13}
+      - {x: -0.68, y: -0.19}
+      - {x: -0.58, y: -0.17999999}
+      - {x: -0.58, y: -0.26}
+      - {x: -0.55, y: -0.47}
+      - {x: -0.53, y: -0.63}
+      - {x: -0.55, y: -0.71999997}
+      - {x: -0.52, y: -0.88}
+      - {x: -0.48999998, y: -0.96999997}
+      - {x: -0.39, y: -1.16}
+      - {x: -0.42999998, y: -1.22}
+      - {x: -0.45999998, y: -1.29}
+      - {x: -0.48999998, y: -1.4}
+      - {x: -0.47, y: -1.4399999}
+      - {x: -0.29, y: -1.55}
+      - {x: -0.19999999, y: -1.56}
+      - {x: 0.26, y: -1.56}
+      - {x: 0.47, y: -1.4599999}
+      - {x: 0.51, y: -1.36}
+      - {x: 0.42999998, y: -1.1999999}
+  m_UseDelaunayMesh: 0
 --- !u!1 &6132568057430257402
 GameObject:
   m_ObjectHideFlags: 0

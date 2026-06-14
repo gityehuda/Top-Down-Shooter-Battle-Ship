@@ -27,12 +27,7 @@ public class Bullet : MonoBehaviour
         lifeSpan -= Time.deltaTime;
 
         if (!(lifeSpan <= 0)) return;
-        
-        if(gameObject.tag == "Bullet")
-        {
-            DeactivateBullet();
-        }
-      
+        DeactivateBullet();
         Reset();
     }
 
@@ -45,10 +40,10 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-         if (gameObject.tag == "EnemyBullet" && collision.gameObject.tag == "Player")
+         if (gameObject.tag == "EnemyBullet" && (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Ally"))
        {
-            Destroy(gameObject);
-            //DeactivateBullet();
+            //Destroy(gameObject);
+            DeactivateBullet();
        }
 
         if (gameObject.tag == "Bullet" && collision.gameObject.tag == "Enemy")

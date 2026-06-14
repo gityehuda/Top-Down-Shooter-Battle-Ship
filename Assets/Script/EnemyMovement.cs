@@ -24,7 +24,7 @@ public class EnemyMovement : MonoBehaviour
     public float distanceToStop = 10f;
     public Transform firingPoint;
     public float fireRate;
-    private float timeToFire;
+    private float timeToFire = 0;
     //  public GameObject bulletPrefab; 
     public float rotationSpeed = 0.1f;
     private float sideDistance = 5f;
@@ -114,7 +114,7 @@ public class EnemyMovement : MonoBehaviour
         {
             foreach(Weapon weapon in weapons)
             {
-                weapon.FireEnemyBullet();
+                weapon.Fire();
             }                                           
           //  Debug.Log("Shooted");
             timeToFire = fireRate;
