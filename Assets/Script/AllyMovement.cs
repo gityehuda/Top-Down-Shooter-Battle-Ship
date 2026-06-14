@@ -14,7 +14,7 @@ public class AllyMovement : MonoBehaviour
     }
     public string allyColumn;
     [Header("Movement")]
-    public float moveSpeed = 100f;
+    public float moveSpeed;
     public float rotationSpeed = 40f;
     //  public float acceleration = 2f;
     private float followDistance = 2f;
@@ -41,7 +41,7 @@ public class AllyMovement : MonoBehaviour
     private ShipState currentState;
 
     [SerializeField] private Transform currentEnemy;
-    private float detectionRadius = 120f;                   
+    private float detectionRadius = 290f;                                 
 
     public bool combatMode = false;
 
@@ -49,9 +49,10 @@ public class AllyMovement : MonoBehaviour
     {
         weapons = GetComponentsInChildren<Weapon>();
     }
-
+    float initialSpeed;
     void Start()
     {
+        initialSpeed = moveSpeed;       
         rb2d = GetComponent<Rigidbody2D>();
 
         currentState = ShipState.Formation;
@@ -124,7 +125,7 @@ public class AllyMovement : MonoBehaviour
                 else
                 {
 
-                    moveSpeed = 100f;
+                    moveSpeed = initialSpeed;
                     RotateTowardTarget();
                 }
             }

@@ -42,13 +42,13 @@ public class PlayerHealth : MonoBehaviour
         float playerHealth = healthImage.fillAmount;
         if(currentHealth > 0)
         {
-            healthPercentage.text = currentHealth.ToString() + "%";
+            healthPercentage.text = currentHealth.ToString();
         }
      
           
         if (currentHealth <= 0)
         {
-            healthPercentage.text = "0%";
+            healthPercentage.text = "0";
             Debug.Log("current health: " + currentHealth);
             Destroy(gameObject);
            
