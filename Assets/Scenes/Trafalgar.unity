@@ -121954,6 +121954,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Object Pool
       objectReference: {fileID: 0}
+    - target: {fileID: 5100603216983277005, guid: de48e49fc3fe4ef449eaf2a0056707a2, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 7013961794369109644, guid: 20f8b34901caf4448b10d3649278d63e, type: 3}
     - target: {fileID: 7241858687936923188, guid: de48e49fc3fe4ef449eaf2a0056707a2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

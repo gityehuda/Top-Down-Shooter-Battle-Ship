@@ -8,6 +8,7 @@ public class Weapon : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform firePoint;
     public float fireForce = 20f;
+    public GameObject MuzzleEffect;
    // public GameObject enemyBullet;
     
 
@@ -32,6 +33,7 @@ public class Weapon : MonoBehaviour
     {
         //GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         // GameObject bulletObject = ObjectPooling.instance.GetObject();
+        Instantiate(MuzzleEffect, firePoint.position, firePoint.rotation);
 
         Bullet bullet = ObjectPooling.instance.GetObject<Bullet>();
         if (transform.parent.tag == "Enemy")
