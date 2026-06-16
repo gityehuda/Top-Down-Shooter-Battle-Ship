@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,6 +12,7 @@ public class GameManager : MonoBehaviour
     private float playerHealth;
     public GameObject gameoverScreen;
     public GameObject missionsuccessScreen;
+    public TMP_Text totalEnemyPanel;
     [SerializeField] private Transform TopEnemy;
     [SerializeField] private Transform BottomEnemy;
     // Start is called before the first frame update
@@ -24,7 +26,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        sceneName = SceneManager.GetActiveScene().name;
+        //sceneName = SceneManager.GetActiveScene().name;
         playerHealth = player.GetComponent<PlayerController>().health;
         if(playerHealth <= 0)
         {
@@ -35,6 +37,8 @@ public class GameManager : MonoBehaviour
             MissionSuccess();  
         }
 
+        totalEnemyPanel.text = "Destroy All Enemies\n" +
+            "Enemies Remaining: " + EnemyCounter();
     }
 
     public void PauseGame()
@@ -64,6 +68,15 @@ public class GameManager : MonoBehaviour
     public void PauseCheck()
     {
         
+    }
+
+    private float EnemyCounter()
+    {
+        float bottomenemy = TopEnemy.childCount;
+        float topenemy = BottomEnemy.childCount;
+        float TotalEnemy = bottomenemy + topenemy;      
+
+        return TotalEnemy;  
     }
 
 }
