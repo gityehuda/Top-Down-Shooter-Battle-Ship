@@ -3526,20 +3526,22 @@ MonoBehaviour:
     In Action), Cuthbert Collingwood\n- Franco-Spanish: Pierre-Charles Villeneuve
     (France)(Surrendered), Federico Gravina (Spain)(Killed In Action)\nWarships Deployed:\nBritish:
     33 warships\n- 27 ships of the line\n- 4 frigates\n- 1 schooner\n- 1 cutter\nNotable
-    Warships: \n- HMS Victory\n- HMS Royal Sovereign\nFranco-Spanish: 40 warships\n-
-    33 ships of the line\n- 5 frigates\n- 2 brigs\nFranco-Spanish Warships:\n- Bucentaure\n-
-    Principe de Asturias\n- Nuestra Senora de Santissima Trinidad\nSummary: The Battle
-    of Trafalgar was a battle which took place in 21 October 1805 off Cape Trafalgar,
-    Atlantic Ocean. It was fought by the British Royal Navy commanded by Vice-Admiral
-    Horatio Nelson against a combined French-Spanish fleet under the command of French
-    Vice-Admiral Pierre-Charles Villeneuve. Aware of the imbalance of strength between
-    his fleet against the Franco-Spanish fleet, Nelson sailed his fleet directly
-    at the Franco-Spanish battle line's flank in two columns, hoping to break the
-    line into more manageable segments. The plan worked impeccably, as Nelson\u2019s
-    fleet split the Franco-Spanish fleet into 3 segments. This, combined with the
-    British crews\u2019 superior training, lead into a decisive British victory.
-    However, Nelson himself died before the battle ended, after being shot by a French
-    musketeer.\nHistorical Outcome: British Victory"
+    Warships: \n- HMS Victory (Nelson's Flagship)\n- HMS Royal Sovereign\nFranco-Spanish:
+    40 warships\n- 33 ships of the line\n- 5 frigates\n- 2 brigs\nFranco-Spanish
+    Warships:\n- Bucentaure (Flagship of the French Armada)\n- Principe de Asturias
+    (Flagship of the Spanish Armada)\n- Nuestra Senora de Santissima Trinidad (One
+    of the few 4-decker ships ever built)\nSummary: The Battle of Trafalgar was a
+    battle which took place in 21 October 1805 off Cape Trafalgar, Atlantic Ocean.
+    It was fought by the British Royal Navy commanded by Vice-Admiral Horatio Nelson
+    against a combined French-Spanish fleet under the command of French Vice-Admiral
+    Pierre-Charles Villeneuve. Aware of the imbalance of strength between his fleet
+    against the Franco-Spanish fleet, Nelson sailed his fleet directly at the Franco-Spanish
+    battle line's flank in two columns, hoping to break the line into more manageable
+    segments. The plan worked impeccably, as Nelson\u2019s fleet split the Franco-Spanish
+    fleet into 3 segments. This, combined with the British crews\u2019 superior training,
+    lead into a decisive British victory. However, Nelson himself died before the
+    battle ended, after being shot by a French musketeer.\nHistorical Outcome: British
+    Victory"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
