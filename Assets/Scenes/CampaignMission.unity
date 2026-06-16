@@ -3523,8 +3523,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Battle of Trafalgar\n\nDate: 21 October 1805\nLocation: Off Cape Trafalgar,
-    Atlantic Ocean\nBelligerents:\nCommanders: \n- British Horatio Nelson (Killed
-    In Action), Cuthbert Collingwood\n- Franco-Spanish: Pierre-Charles Villeneuve
+    Atlantic Ocean\nBelligerents: United Kingdom vs France and Spain (Franco-Spanish)
+    \nHistorical Outcome: British Victory\nCommanders: \n- British: Horatio Nelson
+    (Killed In Action), Cuthbert Collingwood\n- Franco-Spanish: Pierre-Charles Villeneuve
     (France)(Surrendered), Federico Gravina (Spain)(Killed In Action)\nWarships Deployed:\nBritish:
     33 warships\n- 27 ships of the line\n- 4 frigates\n- 1 schooner\n- 1 cutter\nNotable
     Warships: \n- HMS Victory (Nelson's Flagship)\n- HMS Royal Sovereign\nFranco-Spanish:
@@ -3541,8 +3542,7 @@ MonoBehaviour:
     segments. The plan worked impeccably, as Nelson\u2019s fleet split the Franco-Spanish
     fleet into 3 segments. This, combined with the British crews\u2019 superior training,
     lead into a decisive British victory. However, Nelson himself died before the
-    battle ended, after being shot by a French musketeer.\nHistorical Outcome: British
-    Victory"
+    battle ended, after being shot by a French musketeer.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
