@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public GameObject gameoverScreen;
     public GameObject missionsuccessScreen;
     public TMP_Text totalEnemyPanel;
+    [SerializeField] private GameObject settingPanel;
     [SerializeField] private Transform TopEnemy;
     [SerializeField] private Transform BottomEnemy;
     // Start is called before the first frame update
@@ -39,6 +40,11 @@ public class GameManager : MonoBehaviour
 
         totalEnemyPanel.text = "Destroy All Enemies\n" +
             "Enemies Remaining: " + EnemyCounter();
+        if(settingPanel.activeSelf == true)
+        {
+            PauseGame();            
+        }
+
     }
 
     public void PauseGame()

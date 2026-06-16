@@ -1,8 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -11,12 +14,17 @@ public class PlayerController : MonoBehaviour
     public Weapon[] weapons;
     public float health = 10f;
     public float fireRate = 1f;
-    private float timer = 0;
+    public double timer = 0;
     public float turningSpeed = 1f;
     public float decelerationRate;
     private float rotationInput;
     private float moveInput;
-    [SerializeField] private GameManager gameManager;    
+    [SerializeField] private GameManager gameManager;
+    public Slider movingSpeedInfo;
+    public Slider turningSpeedInfo;
+    public Slider decelerationRateInfo;
+    private float maxSpeed = 100f;
+   // [SerializeField] private TMP_Text reloadText;
 
     Vector2 moveDirection;
     Vector2 mousePosition;
@@ -39,6 +47,9 @@ public class PlayerController : MonoBehaviour
         //transform.position = moveDirection;  
         MoveandRotate();
         Attack();
+        moveSpeed = movingSpeedInfo.value;  
+        turningSpeed = turningSpeedInfo.value;  
+        decelerationRate = decelerationRateInfo.value;              
 
     }
     bool isMoved = false;
@@ -74,7 +85,7 @@ public class PlayerController : MonoBehaviour
             isMoved = false;                
 
         }
-
+        rb2d.velocity = Vector2.ClampMagnitude(rb2d.velocity, maxSpeed);
     }
 
     private void Attack()
@@ -98,6 +109,7 @@ public class PlayerController : MonoBehaviour
         {
             timer -= Time.deltaTime;                    
         }
+        //ReloadText();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -108,6 +120,21 @@ public class PlayerController : MonoBehaviour
         }
  
     }          
+
+    //private void ReloadText()
+    //{
+
+    //    timer = Math.Round(timer, 2);
+    //    if(timer > 0)
+    //    {
+    //        reloadText.gameObject.SetActive(true);                  
+    //        reloadText.text = timer.ToString() +"\nReloading Cannons";
+    //    }
+    //    else
+    //    {
+    //        reloadText.gameObject.SetActive(false);                             
+    //    }
+    //}
 
     //private void OnCollisionEnter2D(Collision2D collision)
     //{
