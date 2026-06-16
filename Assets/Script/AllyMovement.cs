@@ -41,7 +41,7 @@ public class AllyMovement : MonoBehaviour
     private ShipState currentState;
 
     [SerializeField] private Transform currentEnemy;
-    private float detectionRadius = 260f;                                 
+    private float detectionRadius = 280f;                                          
 
     public bool combatMode = false;
 
@@ -98,8 +98,8 @@ public class AllyMovement : MonoBehaviour
         //    );
 
         //rb2d.velocity = transform.up * moveSpeed;
-        
-        
+
+
         //if(combatMode == false)
         //{
         //    rb2d.velocity = Vector2.zero;
@@ -107,42 +107,56 @@ public class AllyMovement : MonoBehaviour
         //}
         //else
         //{
-            
-            if (currentEnemy != null)
-            {
-                Vector2 enemyPosition = currentEnemy.position;     
-                Vector2 separation = GetSeparationForce();
-            Vector2 desiredPosition = enemyPosition + separation;     
-                //float angle = Mathf.Atan2(finalDirection.y, finalDirection.x) * Mathf.Rad2Deg - 90f;
-            //rb2d.rotation = Mathf.MoveTowardsAngle(rb2d.rotation, angle, rotationSpeed * Time.fixedDeltaTime);
-                Debug.Log("distance: " + Vector2.Distance(currentEnemy.position, transform.position));
-                direction = currentEnemy.position - transform.position;
-                Vector2 newPosition = Vector2.MoveTowards(rb2d.position, desiredPosition, moveSpeed * Time.deltaTime);
-                rb2d.MovePosition(newPosition);
 
-                if (Vector2.Distance(currentEnemy.position, transform.position) <= distanceToStop)
+        if (currentEnemy != null)
+        {
+            Vector2 enemyPosition = currentEnemy.position;
+            Vector2 separation = GetSeparationForce();
+            Vector2 desiredPosition = enemyPosition + separation;
+            //float angle = Mathf.Atan2(finalDirection.y, finalDirection.x) * Mathf.Rad2Deg - 90f;
+            //rb2d.rotation = Mathf.MoveTowardsAngle(rb2d.rotation, angle, rotationSpeed * Time.fixedDeltaTime);
+            Debug.Log("distance: " + Vector2.Distance(currentEnemy.position, transform.position));
+            direction = currentEnemy.position - transform.position;
+            Vector2 newPosition = Vector2.MoveTowards(rb2d.position, desiredPosition, moveSpeed * Time.deltaTime);
+            rb2d.MovePosition(newPosition);
+
+            if (ProximityCheck())
+            {
+                if (Vector2.Distance(currentEnemy.position, transform.position) <= distanceToStop + distanceToStop)
                 {
                     float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
                     transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, angle), 5f * Time.deltaTime);
                     // Debug.Log("Distance to Stop " + distanceToStop);
                     moveSpeed = 0;
                     Shoot();
+                    Debug.Log("Ally is close");
                 }
-                else
-                {
+            }
 
-                    moveSpeed = initialSpeed;
-                    RotateTowardTarget();
-                }
+            if (Vector2.Distance(currentEnemy.position, transform.position) <= distanceToStop)
+            {
+                float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+                transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, angle), 5f * Time.deltaTime);
+                // Debug.Log("Distance to Stop " + distanceToStop);
+                moveSpeed = 0;
+                Shoot();
             }
             else
             {
-               currentEnemy = FindNearbyEnemy();              
-            }
-       // }
-     
-       
 
+                moveSpeed = initialSpeed;
+                RotateTowardTarget();
+            }
+
+        
+        }
+
+        else
+        {
+            currentEnemy = FindNearbyEnemy();
+        }
+        // }
+    
     }
 
     private Vector2 GetSeparationForce()
@@ -172,6 +186,26 @@ public class AllyMovement : MonoBehaviour
         }
 
         return force.normalized;
+    }
+
+    private float allyStopDistance = 40f;
+
+    private bool ProximityCheck()
+    {
+        Collider2D[] nearby = Physics2D.OverlapCircleAll(transform.position, allyStopDistance);
+
+        foreach(Collider2D col in nearby)
+        {
+            if (col.gameObject == gameObject)
+            {
+                continue;
+            }
+            if(col.gameObject.tag == "Ally")
+            {
+                return true;
+            }
+        }
+        return false;   
     }
 
     //private void MoveToSlot()

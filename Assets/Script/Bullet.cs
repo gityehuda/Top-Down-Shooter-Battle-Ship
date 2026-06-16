@@ -11,6 +11,8 @@ public class Bullet : MonoBehaviour
     private float lifeSpan;
     private Rigidbody2D _rigidbody2D;
     // private GameObject[] bullets;
+    private bool isReleased = false;        
+
 
     private void Awake()
     {
@@ -40,6 +42,8 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if(isReleased) return;                          
+
          if (gameObject.tag == "EnemyBullet" && (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Ally"))
        {
             //Destroy(gameObject);
@@ -56,6 +60,11 @@ public class Bullet : MonoBehaviour
 
     private void DeactivateBullet()
     {
+        if (isReleased) return;
+
+
+
+        isReleased = true;
         ObjectPooling.instance.Release(gameObject);
         // StartCoroutine(ReturnToPool()); 
     }
@@ -66,6 +75,11 @@ public class Bullet : MonoBehaviour
         yield return null;
         
       
+    }
+
+    private void OnEnable()
+    {
+        isReleased = false;             
     }
 
     public void SetRotation(Quaternion rotation)
