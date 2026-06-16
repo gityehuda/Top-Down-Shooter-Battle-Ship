@@ -41,7 +41,7 @@ public class AllyMovement : MonoBehaviour
     private ShipState currentState;
 
     [SerializeField] private Transform currentEnemy;
-    private float detectionRadius = 290f;                                 
+    private float detectionRadius = 260f;                                 
 
     public bool combatMode = false;
 
@@ -110,9 +110,15 @@ public class AllyMovement : MonoBehaviour
             
             if (currentEnemy != null)
             {
+                Vector2 enemyPosition = currentEnemy.position;     
+                Vector2 separation = GetSeparationForce();
+            Vector2 desiredPosition = enemyPosition + separation;     
+                //float angle = Mathf.Atan2(finalDirection.y, finalDirection.x) * Mathf.Rad2Deg - 90f;
+            //rb2d.rotation = Mathf.MoveTowardsAngle(rb2d.rotation, angle, rotationSpeed * Time.fixedDeltaTime);
                 Debug.Log("distance: " + Vector2.Distance(currentEnemy.position, transform.position));
                 direction = currentEnemy.position - transform.position;
-                transform.position = Vector2.MoveTowards(transform.position, currentEnemy.position, moveSpeed * Time.deltaTime);
+                Vector2 newPosition = Vector2.MoveTowards(rb2d.position, desiredPosition, moveSpeed * Time.deltaTime);
+                rb2d.MovePosition(newPosition);
 
                 if (Vector2.Distance(currentEnemy.position, transform.position) <= distanceToStop)
                 {
@@ -151,7 +157,8 @@ public class AllyMovement : MonoBehaviour
             if (col.gameObject == gameObject)
                 continue;
 
-            
+            if (col.gameObject.tag == "Ally")
+            {
                 Vector2 away =
                     (Vector2)(transform.position - col.transform.position);
 
@@ -161,10 +168,10 @@ public class AllyMovement : MonoBehaviour
                 {
                     force += away.normalized / distance;
                 }
-            
+            }
         }
 
-        return force * separationForce;
+        return force.normalized;
     }
 
     //private void MoveToSlot()

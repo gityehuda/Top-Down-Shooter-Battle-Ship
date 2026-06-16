@@ -33,7 +33,7 @@ public class EnemyHealth : MonoBehaviour
         healthImage.fillAmount = currentHealth / maxhealth;
         float enemyHealth = healthImage.fillAmount;
         healthImage.transform.position = transform.position;
-        healthImage.transform.rotation = Camera.main.transform.rotation;
+       // healthImage.transform.rotation = Camera.main.transform.rotation;
         Debug.Log("current health: " + enemyHealth);
         if (currentHealth <= 0)
         {

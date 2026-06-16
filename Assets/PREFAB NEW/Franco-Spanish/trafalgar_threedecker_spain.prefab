@@ -103,6 +103,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 2681967994015184631}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &4776454293162280881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -373,6 +374,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 6385743167374640706}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &4868946880446479502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -519,6 +521,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 2274989252850470492}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &1742270952578437840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -944,6 +947,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 3577763411265180461}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &7669942303368373737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1059,6 +1063,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 265018215713009473}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &8814389322055619454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1205,6 +1210,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 3816272161357324413}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &2637376036739051090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1320,6 +1326,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 139044893297989572}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &3013503951368942717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1435,6 +1442,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 1149172473785734692}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &5436026977353436674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1550,6 +1558,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 5391902862030822753}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &4973781982091419312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1696,6 +1705,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 5284147290879501442}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &4947437539791207474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1811,6 +1821,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 5082068275578776831}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &2786628912313430598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1926,6 +1937,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 8943154395219009179}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &265522980197995702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2041,6 +2053,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 8337010316245291286}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &4577008905531648206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2156,6 +2169,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 5863420306322501710}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &3953584182368316458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2271,6 +2285,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 2738674578636276943}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &6889618674152763619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2417,6 +2432,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 7045128769330098082}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &8525491275030552229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2532,6 +2548,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 7502508205437650589}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &7243615989135739835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2647,6 +2664,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 2461343910060605705}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &3906383883652907696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2762,6 +2780,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 7973260547661355325}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &5086006969777228611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2877,6 +2896,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 7626464228379980143}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &3872116745266094250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2992,6 +3012,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 3874438151677576687}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &4148898398954045145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3200,6 +3221,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 6832189991256592998}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &8843980282486380828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3315,6 +3337,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 1204788282230354309}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &1643239169437930497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3430,6 +3453,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 2693049339222799716}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &1602372176879549150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3545,6 +3569,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 6130653484770006660}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &6822803642253785993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3691,6 +3716,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 6449808848145249512}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &354180140877454983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3806,6 +3832,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 2919340161295963989}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &6853798667705670159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3921,6 +3948,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 634831745924343494}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &7032725905988113702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4067,6 +4095,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 4940500509095678478}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &2046499969805713533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4182,6 +4211,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 320528830489904435}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &7618952741579455122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4297,6 +4327,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 5156138267354037722}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &8536316583164153281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4443,6 +4474,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 388816285322330670}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &5054129514408437724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4558,6 +4590,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 3062516070625991264}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &5075238880188146082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4673,6 +4706,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 5926582617420476009}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &8223936828861991896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4788,6 +4822,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 257440922295391500}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &3339799618091011380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4903,6 +4938,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 3579786196621294451}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &2889160646710783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5080,6 +5116,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 6747830433196204846}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &5847338551981392188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5195,6 +5232,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 676861025754907886}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &5137327644995464872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5412,6 +5450,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 6259995132092107312}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &5076219090278092635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5558,6 +5597,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 7695829293545068522}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &4040154176910129131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5735,6 +5775,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 5185934233902558728}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &6025993105845741060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5850,6 +5891,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 2454552188683813152}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &8280878281792732275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5996,6 +6038,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 6407332202793090329}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &8936606551192076765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6204,6 +6247,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 8398041683100403385}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &2826983006357539966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6350,6 +6394,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 5585617959864599574}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &9167337421822510082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6465,6 +6510,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 6548794763875900134}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &6185719311935482319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6580,6 +6626,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 288936386540242975}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &2089059140840670271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6695,6 +6742,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 5033501841492960025}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &2317173704026784608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6841,6 +6889,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 4722396227858845834}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &7026529107696149321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6987,6 +7036,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 3672530687618091261}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &5913716409350995020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7102,6 +7152,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 3003097415942435232}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &1614424773916063371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7217,6 +7268,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 3679220306677962187}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &1452288329193913478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7332,6 +7384,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 5183316944699152485}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &6854078930734024587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7447,6 +7500,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 1597998253076565272}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &6075315070006218482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7593,6 +7647,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 3991042989149107414}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &4490083451154282168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7832,6 +7887,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 6988076533321357325}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &6848661965827315600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7947,6 +8003,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 952897620063341199}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &2602039849372974921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8093,6 +8150,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 7297647751879963444}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &6002475900490634901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8239,6 +8297,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 4931082276567986010}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &2587893641985445381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8354,6 +8413,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 8799127589585744815}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &8480514175920282499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8469,6 +8529,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 4139178796926550196}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &6564911417413314741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8646,6 +8707,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 7068773664756836643}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &7324373935439288474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8761,6 +8823,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 1587368639395227913}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &500845327579724979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8876,6 +8939,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 1332018457117605917}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &4378868541098150907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8991,6 +9055,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 6503076529934078444}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &1531695117981387044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9106,6 +9171,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 9082255993969578948}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &1904988084230592545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9221,6 +9287,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 5246786275694014868}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &6709947743812356454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9336,6 +9403,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 6287297733723217438}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &7928436029119632295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9482,6 +9550,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 7514911945448242558}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &1544972073892961314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9690,6 +9759,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 2428274239885122491}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &5732574863762774609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9836,6 +9906,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 5315889616179387653}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &1034881495687458738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9951,6 +10022,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 3368002987236828356}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &7650092700824220174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10097,6 +10169,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 2391544032590200543}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &6303822389454342795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10886,6 +10959,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 3012115332358542478}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &6880484526742022457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11001,6 +11075,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 6086322077235788231}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &6489610489614979048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11147,6 +11222,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 8912780444182306046}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &5770218154037282449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11262,6 +11338,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 4703202588861749913}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &3594437107304582433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11470,6 +11547,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 17081174917648243}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &5510676454383585143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11616,6 +11694,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 6536505351070571354}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &8832234679849583531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11731,6 +11810,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 922386967825717767}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &6852412011492024441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11846,6 +11926,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 7325955073857165836}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &5412286610806730276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12346,6 +12427,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 1464375702419350386}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &1518454154754729292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12554,6 +12636,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 184729078914982726}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &5691330823214680640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12700,6 +12783,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 5425973690714618581}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &6083152531372396935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12815,6 +12899,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 7274242891108754209}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &6764748715459819800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12930,6 +13015,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 657784415175204660}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &5104036407569657719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13045,6 +13131,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 3036950670831067344}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &8086467384203199093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13222,6 +13309,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 8836233756162927755}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &3925260984321408609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13337,6 +13425,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 5952562437012141010}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &4098111641212645337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13638,6 +13727,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 3465930163889162691}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &3000170016248548683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13784,6 +13874,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 8543389135180700683}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &112634921732685705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13899,6 +13990,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 2803138665634606587}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &5056759299553688359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14014,6 +14106,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 7881175361614991024}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &8970722847569733751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14253,6 +14346,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 2672313231440831437}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &7638987945449697988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14399,6 +14493,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 4607615318342500459}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &501209816877204318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14545,6 +14640,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 2299996316448225734}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &1129108142497064097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14846,6 +14942,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 5832773528819680261}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &2481951564868198733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14961,6 +15058,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 2924857051603019773}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &8527001369588157393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15076,6 +15174,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 6108238942487312211}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &275777653482118203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15346,6 +15445,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 8022091568402860239}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &7800023770792821344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15461,6 +15561,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 8011298187125823896}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &3151198132464648967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15576,6 +15677,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 8898412926229547769}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &9066130757714734283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15691,6 +15793,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 7948851068491748543}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &2372418237978957815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15837,6 +15940,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 1968222477868535057}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &8253981127009581544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15983,6 +16087,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 5404468388894458571}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &6902357383535741319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16129,6 +16234,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2122892560005292402, guid: b7d780d3803246c48930b3582e1baded, type: 3}
   firePoint: {fileID: 2427252374754524083}
   fireForce: 20
+  MuzzleEffect: {fileID: 1792796487220933299, guid: 814cd2bd6fd696e4ebb5d2423cb41e3d, type: 3}
 --- !u!114 &4652480142513695424
 MonoBehaviour:
   m_ObjectHideFlags: 0
